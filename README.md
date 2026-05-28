@@ -3,7 +3,7 @@
 A static website for Angel's Lawn Service. It can be opened directly in a
 browser or published with GitHub Pages.
 
-Current positioning: mowing, weed control, edging, and tree trimming with the
+Current positioning: mowing, weed control, edging, garden bed mulch, and tree trimming with the
 motto "On-time lawn care, quick service, fair pricing."
 
 ## Cover Photo
@@ -11,6 +11,9 @@ motto "On-time lawn care, quick service, fair pricing."
 Save Angel's cover photo as `assets/angel-lawn-cover.jpg`. The site is already
 wired to use that file first and fall back to the current stock image if it is
 missing.
+
+Save the mulch truck photo as `assets/mulch-garden-bed.jpg`. The service detail
+section is already wired to use that file first and fall back if it is missing.
 
 ## Files
 
