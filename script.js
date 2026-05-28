@@ -45,6 +45,6 @@ quoteForm.addEventListener("submit", (event) => {
   const name = formData.get("name").trim();
   const service = formData.get("service");
 
-  formStatus.textContent = `Thanks, ${name}. Your ${service.toLowerCase()} request is ready to send.`;
+  formStatus.textContent = `Thanks, ${name}. Text or call Angel at 512 934 2000 about ${service.toLowerCase()}.`;
   quoteForm.reset();
 });

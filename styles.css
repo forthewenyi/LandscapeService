@@ -139,6 +139,7 @@ a {
 }
 
 .site-nav {
+  align-items: center;
   display: flex;
   gap: clamp(14px, 4vw, 32px);
   font-size: 0.9rem;
@@ -253,6 +254,21 @@ a {
   flex-wrap: wrap;
   gap: 14px;
   margin-top: 32px;
+}
+
+.hero-contact {
+  margin: 18px 0 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.hero-contact a,
+.quote-copy a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
 }
 
 .button {
@@ -532,6 +548,24 @@ a {
   font-weight: 800;
 }
 
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 15px;
+  color: var(--leaf-dark);
+  border: 1px solid rgba(31, 107, 69, 0.26);
+  border-radius: 999px;
+  font-weight: 900;
+}
+
 .site-footer {
   display: flex;
   justify-content: space-between;
@@ -548,6 +582,12 @@ a {
 
 .site-footer a {
   color: rgba(255, 255, 255, 0.78);
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
 }
 
 .reveal {
@@ -617,8 +657,19 @@ a {
   }
 
   .site-nav {
-    gap: 12px;
-    font-size: 0.82rem;
+    justify-content: flex-end;
+    gap: 10px;
+    font-size: 0.78rem;
+    line-height: 1.1;
+    text-align: right;
+  }
+
+  .site-nav a {
+    padding: 4px 0;
+  }
+
+  .nav-phone {
+    display: none;
   }
 
   .hero {
@@ -671,8 +722,17 @@ a {
     width: 100%;
   }
 
+  .contact-actions {
+    display: grid;
+  }
+
   .site-footer {
     flex-direction: column;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
   }
 }
 
