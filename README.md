@@ -6,6 +6,12 @@ browser or published with GitHub Pages.
 Current positioning: mowing, weed control, edging, and tree trimming with the
 motto "On-time lawn care, quick service, fair pricing."
 
+## Cover Photo
+
+Save Angel's cover photo as `assets/angel-lawn-cover.jpg`. The site is already
+wired to use that file first and fall back to the current stock image if it is
+missing.
+
 ## Files
 
 - `index.html` contains the page content.
