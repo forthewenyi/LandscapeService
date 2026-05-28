@@ -1,0 +1,20 @@
+# Angel's Lawn Service
+
+A static website for Angel's Lawn Service. It can be opened directly in a
+browser or published with GitHub Pages.
+
+Current positioning: mowing, weed control, edging, and tree trimming with the
+motto "On-time lawn care, quick service, fair pricing."
+
+## Files
+
+- `index.html` contains the page content.
+- `styles.css` contains the responsive layout and visual design.
+- `script.js` contains the header, reveal animation, and quote form behavior.
+
+## Publish on GitHub Pages
+
+1. Push this repository to `forthewenyi/LawnService`.
+2. In GitHub, open **Settings > Pages**.
+3. Choose the `main` branch and the root folder.
+4. Save, then wait for GitHub Pages to provide the live URL.

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Angel's Lawn Service provides mowing, weed control, edging, and tree trimming with on-time service and fair pricing."
+    />
+    <title>Angel's Lawn Service</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Angel's Lawn Service home">
+        <span class="brand-mark" aria-hidden="true">
+          <span class="brand-halo"></span>
+          <span class="brand-initial">A</span>
+          <span class="brand-grass"></span>
+        </span>
+        <span>Angel's Lawn Service</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#quote">Quote</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="Angel's Lawn Service">
+        <img
+          class="hero-image"
+          src="https://images.unsplash.com/photo-1734303023491-db8037a21f09?auto=format&fit=crop&fm=jpg&q=80&w=2400"
+          alt="A lawn care crew mowing and trimming a fresh residential yard"
+        />
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">Mowing, weeds, edging, and tree trimming</p>
+          <h1>Angel's Lawn Service</h1>
+          <p class="motto">On-time lawn care, quick service, fair pricing.</p>
+          <p class="hero-copy">
+            Angel keeps lawns clean, edges sharp, weeds controlled, and
+            overgrown trees trimmed back with dependable service.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#quote">Request a quote</a>
+            <a class="button secondary" href="#services">View services</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro section-pad">
+        <div class="section-label">What we handle</div>
+        <div class="intro-copy reveal">
+          <h2>The main yard work handled by one reliable crew.</h2>
+          <p>
+            Angel focuses on the outdoor jobs homeowners ask for most: mowing,
+            weed control, edging, and trimming trees before they take over.
+          </p>
+        </div>
+      </section>
+
+      <section class="services" id="services" aria-label="Lawn care services">
+        <div class="services-grid">
+          <article class="service-item reveal">
+            <span class="service-number">01</span>
+            <h3>Mowing</h3>
+            <p>Quick, even cuts that keep the yard clean and easy to maintain.</p>
+          </article>
+          <article class="service-item reveal">
+            <span class="service-number">02</span>
+            <h3>Weed control</h3>
+            <p>Targeted weed killing around lawns, beds, fence lines, and hard edges.</p>
+          </article>
+          <article class="service-item reveal">
+            <span class="service-number">03</span>
+            <h3>Edging</h3>
+            <p>Clean borders along sidewalks, driveways, patios, and garden beds.</p>
+          </article>
+          <article class="service-item reveal">
+            <span class="service-number">04</span>
+            <h3>Tree trimming</h3>
+            <p>Cutting and trimming low branches, overgrowth, and small trees.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="work-band" id="work" aria-label="How service works">
+        <div class="work-visual" aria-hidden="true"></div>
+        <div class="work-content reveal">
+          <p class="eyebrow">Simple scheduling</p>
+          <h2>On time, efficient, and priced for regular homeowners.</h2>
+          <ol class="steps">
+            <li>
+              <span>Send the property details.</span>
+              Share your address, yard size, and what needs to be cut or treated.
+            </li>
+            <li>
+              <span>Get a fair quote.</span>
+              Pricing is based on the work, the yard condition, and visit frequency.
+            </li>
+            <li>
+              <span>Keep the yard ready.</span>
+              Angel shows up on schedule and gets the job done quickly.
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="promise section-pad">
+        <div class="section-label">Why customers call</div>
+        <div class="promise-list reveal">
+          <p>On-time visits</p>
+          <p>Quick service</p>
+          <p>Fair pricing</p>
+          <p>Healthy grass</p>
+        </div>
+      </section>
+
+      <section class="quote" id="quote" aria-label="Request a lawn service quote">
+        <div class="quote-copy reveal">
+          <p class="eyebrow">Start here</p>
+          <h2>Tell us what your yard needs.</h2>
+          <p>
+            Send a few details and Angel can follow up with a quote for mowing,
+            weed control, edging, or tree trimming.
+          </p>
+        </div>
+        <form class="quote-form reveal" data-quote-form>
+          <label>
+            Name
+            <input name="name" type="text" autocomplete="name" required />
+          </label>
+          <label>
+            Phone or email
+            <input name="contact" type="text" autocomplete="email" required />
+          </label>
+          <label>
+            Service needed
+            <select name="service" required>
+              <option value="">Choose a service</option>
+              <option>Mowing</option>
+              <option>Weed control</option>
+              <option>Edging</option>
+              <option>Tree trimming</option>
+              <option>Multiple services</option>
+            </select>
+          </label>
+          <label>
+            Property details
+            <textarea
+              name="details"
+              rows="4"
+              placeholder="Yard size, timing, gate access, or anything else useful"
+            ></textarea>
+          </label>
+          <button class="button primary" type="submit">Prepare my quote</button>
+          <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Angel's Lawn Service</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
