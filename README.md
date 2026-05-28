@@ -15,6 +15,11 @@ missing.
 Save the mulch truck photo as `assets/mulch-garden-bed.jpg`. The service detail
 section is already wired to use that file first and fall back if it is missing.
 
+Save the before/after cleanup photos as:
+
+- `assets/before-wall-cleanup.jpg`
+- `assets/after-wall-cleanup.jpg`
+
 ## Files
 
 - `index.html` contains the page content.

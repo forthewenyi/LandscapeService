@@ -2,13 +2,23 @@ const header = document.querySelector("[data-header]");
 const revealItems = document.querySelectorAll(".reveal");
 const quoteForm = document.querySelector("[data-quote-form]");
 const formStatus = document.querySelector("[data-form-status]");
-const fallbackImages = document.querySelectorAll("img[data-fallback-src]");
+const managedImages = document.querySelectorAll(
+  "img[data-fallback-src], img[data-missing-label]"
+);
 
-fallbackImages.forEach((image) => {
+managedImages.forEach((image) => {
   image.addEventListener(
     "error",
     () => {
-      image.src = image.dataset.fallbackSrc;
+      if (image.dataset.fallbackSrc) {
+        image.src = image.dataset.fallbackSrc;
+        return;
+      }
+
+      const frame = image.closest("figure");
+      frame?.classList.add("is-missing");
+      frame?.setAttribute("data-missing-label", image.dataset.missingLabel);
+      image.hidden = true;
     },
     { once: true }
   );
