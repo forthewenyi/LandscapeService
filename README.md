@@ -1,6 +1,6 @@
-# Landscaping Service
+# Gonzalo Landscape and Tree Care
 
-A responsive static website for a family landscaping service offering tree and
+A responsive static website for the Gonzalo family landscaping service offering tree and
 lawn care, gardens and planting, patios and hardscapes, decks, and fences across
 Austin and surrounding communities.
 
