@@ -268,13 +268,27 @@ a {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(360px, 0.72fr) minmax(0, 1.28fr);
-  gap: clamp(36px, 5vw, 76px);
-  align-items: center;
-  min-height: calc(100svh - var(--header-height));
-  padding: clamp(34px, 4vw, 58px) var(--page-gutter);
+  grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+  align-items: end;
+  min-height: 0;
+  padding: clamp(40px, 5vw, 72px) 0 0;
   color: var(--ink);
   background: var(--plaster);
+}
+
+.hero-copy {
+  display: contents;
+}
+
+.hero-copy > .kicker,
+.hero-copy > h1 {
+  grid-column: 1;
+  margin-right: clamp(36px, 6vw, 96px);
+  margin-left: var(--page-gutter);
+}
+
+.hero-copy > .kicker {
+  align-self: end;
 }
 
 .kicker {
@@ -287,19 +301,21 @@ a {
 }
 
 .hero h1 {
-  max-width: 650px;
+  max-width: 760px;
   margin: 0;
   color: var(--cedar);
-  font-size: clamp(4.5rem, 6.7vw, 7.2rem);
-  line-height: 0.76;
+  font-size: clamp(4.5rem, 7.2vw, 8rem);
+  line-height: 0.78;
   letter-spacing: -0.025em;
 }
 
 .hero-intro {
-  max-width: 520px;
-  margin-top: clamp(28px, 4vw, 48px);
-  padding-top: 22px;
-  border-top: 3px solid var(--adobe);
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  max-width: 600px;
+  margin: 0 var(--page-gutter) 0 0;
+  padding: 10px 0 4px clamp(24px, 3vw, 48px);
+  border-left: 3px solid var(--adobe);
 }
 
 .hero-intro > p {
@@ -325,18 +341,24 @@ a {
 }
 
 .hero-comparison {
+  grid-column: 1 / -1;
   min-width: 0;
+  margin-top: clamp(36px, 4vw, 58px);
 }
 
 .hero-comparison > p {
-  margin: 12px 0 0;
+  margin: 0;
+  padding: 12px var(--page-gutter) 14px;
   color: var(--muted);
   font-size: 0.78rem;
   text-align: right;
 }
 
 .hero-comparison .photo-frame {
-  border: 1px solid var(--limestone);
+  height: clamp(460px, 56vw, 760px);
+  border: 0;
+  aspect-ratio: auto;
+  clip-path: none;
 }
 
 .service-index {
@@ -1689,7 +1711,18 @@ a {
   .hero {
     min-height: 0;
     padding-top: clamp(48px, 9vw, 76px);
-    padding-bottom: clamp(48px, 9vw, 76px);
+    padding-bottom: 0;
+  }
+
+  .hero-copy {
+    display: block;
+    padding: 0 var(--page-gutter);
+  }
+
+  .hero-copy > .kicker,
+  .hero-copy > h1 {
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .story-hero {
@@ -1706,14 +1739,22 @@ a {
 
   .hero-intro {
     max-width: 540px;
+    margin: clamp(28px, 5vw, 44px) 0 0;
+    padding: 22px 0 0;
+    border-top: 3px solid var(--adobe);
+    border-left: 0;
   }
 
   .hero-comparison {
-    margin-top: 8px;
+    margin-top: clamp(36px, 7vw, 52px);
   }
 
   .hero-comparison > p {
     text-align: left;
+  }
+
+  .hero-comparison .photo-frame {
+    height: clamp(420px, 72vw, 600px);
   }
 
   .service-index {
@@ -1785,6 +1826,12 @@ a {
 
   .hero h1 {
     font-size: clamp(4rem, 20vw, 6rem);
+  }
+
+  .hero-comparison .photo-frame {
+    height: 62svh;
+    min-height: 420px;
+    max-height: 560px;
   }
 
   .hero-contact {
