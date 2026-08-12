@@ -12,6 +12,7 @@ const serviceFilterLinks = document.querySelectorAll("[data-service-filter]");
 const projectCards = document.querySelectorAll("[data-category]");
 const compareWidgets = document.querySelectorAll("[data-compare]");
 const quoteForm = document.querySelector("[data-quote-form]");
+const quoteSubmit = document.querySelector("[data-quote-submit]");
 const formStatus = document.querySelector("[data-form-status]");
 
 const setHeaderState = () => {
@@ -111,7 +112,7 @@ compareWidgets.forEach((widget) => {
   });
 });
 
-quoteForm?.addEventListener("submit", (event) => {
+const prepareQuoteText = (event) => {
   event.preventDefault();
 
   const formData = new FormData(quoteForm);
@@ -157,4 +158,10 @@ quoteForm?.addEventListener("submit", (event) => {
   const smsUrl = `sms:+${PHONE_DIGITS}?body=${encodeURIComponent(message)}`;
   formStatus.innerHTML = `Your request is not sent yet. If your text app did not open, <a href="${smsUrl}">open the prepared text to ${PHONE_DISPLAY}</a>.`;
   window.location.href = smsUrl;
+};
+
+quoteForm?.addEventListener("submit", prepareQuoteText);
+
+quoteSubmit?.addEventListener("click", (event) => {
+  prepareQuoteText(event);
 });
