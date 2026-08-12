@@ -124,7 +124,7 @@ quoteForm?.addEventListener("submit", (event) => {
   const details = String(formData.get("details") || "").trim();
 
   if (!services.length) {
-    formStatus.textContent = "Choose at least one service before opening the text request.";
+    formStatus.textContent = "Choose at least one service before preparing your text.";
     quoteForm.querySelector('[name="service"]')?.focus();
     return;
   }
@@ -142,7 +142,7 @@ quoteForm?.addEventListener("submit", (event) => {
     .filter(Boolean)
     .join(" ");
 
-  const smsUrl = `sms:+${PHONE_DIGITS}?&body=${encodeURIComponent(message)}`;
-  formStatus.innerHTML = `Your request is not sent yet. If your text app did not open, <a href="${smsUrl}">open a text to ${PHONE_DISPLAY}</a>.`;
+  const smsUrl = `sms:+${PHONE_DIGITS}?body=${encodeURIComponent(message)}`;
+  formStatus.innerHTML = `Your request is not sent yet. If your text app did not open, <a href="${smsUrl}">open the prepared text to ${PHONE_DISPLAY}</a>.`;
   window.location.href = smsUrl;
 });
