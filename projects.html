@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="See real Austin-area landscaping projects, including lawn and garden work, patios, paths, decks, fences, and clearly labeled before-and-after results." />
+    <meta name="description" content="See Austin-area tree, garden, hardscape, patio, deck, fence, sprinkler, and yard-cleanup work from Gonzalo Landscape and Tree Care." />
     <meta name="theme-color" content="#123b31" />
     <title>Projects | Gonzalo Landscape and Tree Care</title>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23123b31'/%3E%3Cpath d='M18 42C18 25 30 13 48 14C47 32 35 44 18 42Z' fill='%23e6d9c1'/%3E%3Cpath d='M19 43C28 34 35 27 47 16' stroke='%23c4512f' stroke-width='4'/%3E%3C/svg%3E" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260812-5" />
+    <link rel="stylesheet" href="styles.css?v=20260812-6" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -39,20 +39,24 @@
 
         <div class="project-filters" aria-label="Filter landscaping projects">
           <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
-          <button class="filter-button" type="button" data-filter="lawn" aria-pressed="false">Tree + lawn</button>
-          <button class="filter-button" type="button" data-filter="gardens" aria-pressed="false">Gardens + planting</button>
-          <button class="filter-button" type="button" data-filter="hardscapes" aria-pressed="false">Patios + hardscapes</button>
-          <button class="filter-button" type="button" data-filter="fences" aria-pressed="false">Decks + fences</button>
+          <button class="filter-button" type="button" data-filter="tree-service" aria-pressed="false">Tree Service</button>
+          <button class="filter-button" type="button" data-filter="hardscapes" aria-pressed="false">Hardscapes</button>
+          <button class="filter-button" type="button" data-filter="patios" aria-pressed="false">Patios</button>
+          <button class="filter-button" type="button" data-filter="decks" aria-pressed="false">Decks</button>
+          <button class="filter-button" type="button" data-filter="fences" aria-pressed="false">Fences</button>
+          <button class="filter-button" type="button" data-filter="sprinklers" aria-pressed="false">Sprinklers</button>
+          <button class="filter-button" type="button" data-filter="gardens" aria-pressed="false">Gardens</button>
+          <button class="filter-button" type="button" data-filter="yard-cleanup" aria-pressed="false">Yard Cleanup</button>
         </div>
 
-        <section class="featured-projects" aria-labelledby="featured-projects-title">
+        <section class="featured-projects" aria-labelledby="featured-projects-title" data-featured-projects>
           <div class="featured-projects-heading reveal">
             <p class="kicker">Before + after</p>
             <h2 class="display-type" id="featured-projects-title">See what changed.</h2>
             <p>Three starting points. Three clearly labeled results.</p>
           </div>
 
-          <article class="featured-project featured-project-wide reveal" data-category="hardscapes">
+          <article class="featured-project featured-project-wide reveal" data-category="hardscapes yard-cleanup">
             <div class="compare photo-frame" data-compare style="--compare-position: 50%">
               <img loading="lazy" decoding="async" class="compare-before" src="assets/projects/side-yard-overgrowth-before.jpg" alt="Overgrown side yard before cleanup and path construction" />
               <div class="compare-after"><img loading="lazy" decoding="async" src="assets/projects/side-yard-gravel-path-after.jpg" alt="The same side yard after clearing, grading, edging, and gravel-path installation" /></div>
@@ -62,17 +66,20 @@
           </article>
 
           <div class="featured-project-pair">
-            <article class="featured-project reveal" data-category="gardens"><div class="before-after-images"><figure><img loading="lazy" decoding="async" src="assets/projects/front-garden-overgrown-before.jpg" alt="Overgrown front planting bed before garden cleanup" /><figcaption class="display-type">Before</figcaption></figure><figure><img loading="lazy" decoding="async" src="assets/projects/front-garden-fresh-mulch-after.jpg" alt="Front planting bed after cleanup, pruning, edging, and mulch" /><figcaption class="display-type">After</figcaption></figure></div><div class="featured-project-copy"><p class="project-location">Garden cleanup + mulch</p><h3 class="display-type">Front garden reset</h3><p>Weed removal, selective pruning, bed shaping, edging, and fresh mulch.</p></div></article>
-            <article class="featured-project reveal" data-category="gardens hardscapes lawn"><div class="before-after-images"><figure><img loading="lazy" decoding="async" src="assets/projects/backyard-bare-ground-before.jpg" alt="Bare backyard before the full landscape installation" /><figcaption class="display-type">Before</figcaption></figure><figure><img loading="lazy" decoding="async" src="assets/projects/backyard-landscape-finished-after.jpg" alt="Backyard after lawn, gravel paths, stone borders, mulch, and planting" /><figcaption class="display-type">After</figcaption></figure></div><div class="featured-project-copy"><p class="project-location">Complete landscape installation</p><h3 class="display-type">Bare yard to finished landscape</h3><p>Grading, lawn, paths, stone borders, planting areas, mulch, and cleanup.</p></div></article>
+            <article class="featured-project reveal" data-category="gardens yard-cleanup"><div class="before-after-images"><figure><img loading="lazy" decoding="async" src="assets/projects/front-garden-overgrown-before.jpg" alt="Overgrown front planting bed before garden cleanup" /><figcaption class="display-type">Before</figcaption></figure><figure><img loading="lazy" decoding="async" src="assets/projects/front-garden-fresh-mulch-after.jpg" alt="Front planting bed after cleanup, pruning, edging, and mulch" /><figcaption class="display-type">After</figcaption></figure></div><div class="featured-project-copy"><p class="project-location">Garden cleanup + mulch</p><h3 class="display-type">Front garden reset</h3><p>Weed removal, selective pruning, bed shaping, edging, and fresh mulch.</p></div></article>
+            <article class="featured-project reveal" data-category="gardens hardscapes yard-cleanup"><div class="before-after-images"><figure><img loading="lazy" decoding="async" src="assets/projects/backyard-bare-ground-before.jpg" alt="Bare backyard before the full landscape installation" /><figcaption class="display-type">Before</figcaption></figure><figure><img loading="lazy" decoding="async" src="assets/projects/backyard-landscape-finished-after.jpg" alt="Backyard after paths, stone borders, mulch, planting, and ground-cover installation" /><figcaption class="display-type">After</figcaption></figure></div><div class="featured-project-copy"><p class="project-location">Complete landscape installation</p><h3 class="display-type">Bare yard to finished landscape</h3><p>Grading, paths, stone borders, planting areas, mulch, ground cover, and cleanup.</p></div></article>
           </div>
         </section>
 
-        <div class="project-grid-heading reveal"><p class="kicker">More completed work</p><h2 class="display-type">Find a project like yours.</h2></div>
+        <div class="project-grid-heading reveal" data-project-grid-heading><div><p class="kicker" data-project-grid-kicker>More completed work</p><h2 class="display-type" data-project-grid-title>Find a project like yours.</h2></div><p data-project-grid-summary>Choose a service above to narrow the gallery.</p></div>
         <div class="project-grid" data-project-grid>
-          <article class="project-card reveal" data-category="lawn gardens"><div class="photo-frame project-photo"><img loading="lazy" decoding="async" src="assets/projects/backyard-lawn-and-beds-progress.jpg" alt="New backyard lawn beside shaped planting beds awaiting final planting and mulch" /></div><div class="project-meta"><span class="project-index display-type">01</span><div><h2 class="display-type">Lawn + bed installation</h2><p class="project-location">Installation in progress</p><p>Fresh turf, shaped planting beds, and clean stone transitions before the final bed finish.</p></div></div></article>
+          <article class="project-card reveal" data-category="gardens hardscapes"><div class="photo-frame project-photo"><img loading="lazy" decoding="async" src="assets/projects/backyard-lawn-and-beds-progress.jpg" alt="Backyard with shaped planting beds and clean stone transitions during installation" /></div><div class="project-meta"><span class="project-index display-type">01</span><div><h2 class="display-type">Backyard beds + stone transitions</h2><p class="project-location">Installation in progress</p><p>Shaped planting beds and clean stone transitions before planting and the final bed finish.</p></div></div></article>
           <article class="project-card reveal" data-category="gardens hardscapes"><div class="photo-frame project-photo"><img loading="lazy" decoding="async" src="assets/projects/front-yard-hardscape-and-beds-progress.jpg" alt="Front-yard installation in progress with a paver landing, stepping stones, river rock, and mulched beds" /></div><div class="project-meta"><span class="project-index display-type">02</span><div><h2 class="display-type">Paver landing + garden path</h2><p class="project-location">Installation in progress</p><p>A paver landing, stepping-stone paths, river-rock drainage, and refreshed planting beds.</p></div></div></article>
-          <article class="project-card reveal" data-category="hardscapes"><div class="photo-frame project-photo"><img loading="lazy" decoding="async" src="assets/projects/backyard-gravel-fire-pit-patio-after.jpg?v=20260812-2" alt="Finished backyard gravel patio with limestone retaining walls and a central fire pit" /></div><div class="project-meta"><span class="project-index display-type">03</span><div><h2 class="display-type">Fire-pit patio</h2><p class="project-location">Backyard hardscape</p><p>A gravel seating area, limestone retaining walls, central fire pit, and finished borders.</p></div></div></article>
+          <article class="project-card reveal" data-category="patios hardscapes"><div class="photo-frame project-photo"><img loading="lazy" decoding="async" src="assets/projects/backyard-gravel-fire-pit-patio-after.jpg?v=20260812-2" alt="Finished backyard gravel patio with limestone retaining walls and a central fire pit" /></div><div class="project-meta"><span class="project-index display-type">03</span><div><h2 class="display-type">Fire-pit patio</h2><p class="project-location">Backyard patio</p><p>A gravel seating area, limestone retaining walls, central fire pit, and finished borders.</p></div></div></article>
           <article class="project-card project-card-portrait reveal" data-category="fences"><div class="photo-frame project-photo"><img loading="lazy" decoding="async" src="assets/projects/backyard-horizontal-wood-fence-enclosure-after.jpg?v=20260812-2" alt="New horizontal-board utility enclosure and gate built beside a brick home" /></div><div class="project-meta"><span class="project-index display-type">04</span><div><h2 class="display-type">Custom utility enclosure</h2><p class="project-location">Fence + structure</p><p>Horizontal-board construction, a framed gate, secure hardware, and a clean fit beside the home.</p></div></div></article>
+          <article class="project-card project-card-placeholder reveal" data-category="tree-service"><div class="project-placeholder" aria-label="Tree service project photos coming soon"><p class="kicker">Project photos coming soon</p><p class="display-type">Trim.<br />Remove.<br />Haul.</p><span>Tree trimming, removal, cleanup, and debris haul-away.</span></div><div class="project-meta"><span class="project-index display-type">05</span><div><h2 class="display-type">Tree Service</h2><p class="project-location">Available service</p><p>Send photos of the tree and surrounding property for a project quote.</p></div></div></article>
+          <article class="project-card project-card-placeholder reveal" data-category="decks"><div class="project-placeholder" aria-label="Deck project photos coming soon"><p class="kicker">Project photos coming soon</p><p class="display-type">Build.<br />Repair.<br />Protect.</p><span>Deck construction, repairs, staining, and sealing.</span></div><div class="project-meta"><span class="project-index display-type">06</span><div><h2 class="display-type">Decks</h2><p class="project-location">Available service</p><p>Deck examples will be added as the project gallery grows.</p></div></div></article>
+          <article class="project-card project-card-placeholder reveal" data-category="sprinklers"><div class="project-placeholder" aria-label="Sprinkler installation photos coming soon"><p class="kicker">Project photos coming soon</p><p class="display-type">Plan.<br />Trench.<br />Install.</p><span>New in-ground sprinkler installations only.</span></div><div class="project-meta"><span class="project-index display-type">07</span><div><h2 class="display-type">Sprinklers</h2><p class="project-location">Available service</p><p>Installation examples will be added as the project gallery grows.</p></div></div></article>
         </div>
       </section>
 
@@ -84,6 +91,6 @@
     </main>
 
     <footer class="site-footer"><a class="brand display-type" href="index.html">Gonzalo Landscape and Tree Care</a><p>Thirty years of Gonzalo family experience serving Austin and surrounding communities.</p><div class="footer-links"><a href="tel:+15127920697">Call 512 792 0697</a><a href="sms:+15127920697">Text for a quote</a><a href="mailto:gonzalotreeservices@gmail.com">Email us</a><a href="index.html">Home</a></div></footer>
-    <script src="script.js?v=20260812-4"></script>
+    <script src="script.js?v=20260812-5"></script>
   </body>
 </html>

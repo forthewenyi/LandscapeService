@@ -10,6 +10,10 @@ const revealItems = document.querySelectorAll(".reveal");
 const filterButtons = document.querySelectorAll("[data-filter]");
 const serviceFilterLinks = document.querySelectorAll("[data-service-filter]");
 const projectCards = document.querySelectorAll("[data-category]");
+const featuredProjects = document.querySelector("[data-featured-projects]");
+const projectGridKicker = document.querySelector("[data-project-grid-kicker]");
+const projectGridTitle = document.querySelector("[data-project-grid-title]");
+const projectGridSummary = document.querySelector("[data-project-grid-summary]");
 const compareWidgets = document.querySelectorAll("[data-compare]");
 const quoteForm = document.querySelector("[data-quote-form]");
 const quoteSubmit = document.querySelector("[data-quote-submit]");
@@ -86,6 +90,24 @@ const setProjectFilter = (filter) => {
     card.classList.toggle("is-filtered-out", !shouldShow);
     card.hidden = !shouldShow;
   });
+
+  if (featuredProjects) {
+    const hasVisibleFeaturedProject = [...featuredProjects.querySelectorAll("[data-category]")].some(
+      (project) => !project.hidden
+    );
+    featuredProjects.hidden = !hasVisibleFeaturedProject;
+  }
+
+  const selectedButton = [...filterButtons].find((button) => button.dataset.filter === filter);
+  const selectedLabel = selectedButton?.textContent.trim() || "Projects";
+  if (projectGridKicker && projectGridTitle && projectGridSummary) {
+    const showingAll = filter === "all";
+    projectGridKicker.textContent = showingAll ? "More completed work" : "Filtered by service";
+    projectGridTitle.textContent = showingAll ? "Find a project like yours." : `${selectedLabel} work.`;
+    projectGridSummary.textContent = showingAll
+      ? "Choose a service above to narrow the gallery."
+      : "Real project photos are shown when available; clearly labeled examples fill the gaps for now.";
+  }
 };
 
 const requestedFilter = new URLSearchParams(window.location.search).get("filter");
@@ -94,7 +116,14 @@ if (requestedFilter && [...filterButtons].some((button) => button.dataset.filter
 }
 
 filterButtons.forEach((button) => {
-  button.addEventListener("click", () => setProjectFilter(button.dataset.filter));
+  button.addEventListener("click", () => {
+    const filter = button.dataset.filter;
+    setProjectFilter(filter);
+    const nextUrl = new URL(window.location.href);
+    if (filter === "all") nextUrl.searchParams.delete("filter");
+    else nextUrl.searchParams.set("filter", filter);
+    window.history.replaceState({}, "", nextUrl);
+  });
 });
 
 serviceFilterLinks.forEach((link) => {
