@@ -408,6 +408,59 @@ a {
   background: var(--plaster);
 }
 
+.service-guide-collapsed {
+  padding-top: var(--section-space-compact);
+  padding-bottom: var(--section-space-compact);
+}
+
+.service-disclosure summary {
+  display: flex;
+  gap: 32px;
+  align-items: end;
+  justify-content: space-between;
+  cursor: pointer;
+  list-style: none;
+}
+
+.service-disclosure summary::-webkit-details-marker {
+  display: none;
+}
+
+.service-disclosure-title {
+  display: block;
+  max-width: 820px;
+  margin-top: 12px;
+  color: var(--cedar);
+  font-size: clamp(3.2rem, 6.5vw, 7rem);
+  line-height: 0.84;
+}
+
+.service-disclosure-action {
+  flex: 0 0 auto;
+  padding-bottom: 8px;
+  color: var(--adobe);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.service-disclosure .when-open {
+  display: none;
+}
+
+.service-disclosure[open] .when-closed {
+  display: none;
+}
+
+.service-disclosure[open] .when-open {
+  display: inline;
+}
+
+.service-disclosure-content {
+  padding-top: 24px;
+}
+
 .service-jump-nav {
   position: sticky;
   top: var(--header-height);
@@ -1326,6 +1379,22 @@ a {
   line-height: 1;
 }
 
+.quote-copy .quote-email {
+  margin-top: 18px;
+  color: rgba(250, 244, 231, 0.72);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.quote-email a {
+  color: var(--plaster);
+  font-weight: 700;
+  overflow-wrap: anywhere;
+  text-decoration: underline;
+  text-decoration-color: rgba(250, 244, 231, 0.42);
+  text-underline-offset: 4px;
+}
+
 .quote-form {
   display: grid;
   gap: 17px;
@@ -1339,6 +1408,13 @@ a {
   font-weight: 700;
   letter-spacing: 0.07em;
   text-transform: uppercase;
+}
+
+.optional-label {
+  color: rgba(250, 244, 231, 0.62);
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .service-options {
@@ -1698,6 +1774,7 @@ a {
 
 @media (max-width: 560px) {
   :root {
+    --header-height: 82px;
     --section-space: 64px;
     --section-space-compact: 56px;
   }
@@ -1716,6 +1793,16 @@ a {
 
   .service-index {
     grid-template-columns: 1fr;
+  }
+
+  .service-disclosure summary {
+    display: grid;
+    gap: 20px;
+    align-items: start;
+  }
+
+  .service-disclosure-title {
+    font-size: clamp(3.3rem, 17vw, 4.8rem);
   }
 
   .service-row,

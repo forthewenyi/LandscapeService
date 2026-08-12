@@ -29,7 +29,7 @@
 - Colors and visual tokens: deep cedar, warm plaster, limestone, muted sage, and adobe accents consistently reproduce the Texas-modern direction with strong text contrast.
 - Image quality and asset fidelity: six local raster assets load at native dimensions. The wide hero and three project images match Austin/Texas-modern residential landscaping; the before/after pair preserves the same house, camera, and lighting. Every visible photo uses the same clipped-corner mask.
 - Photo-frame geometry: every `.photo-frame` now resolves to the reference frame's 15:8 ratio (1.875:1), with proportional corner cuts at 4.8% horizontal and 9% vertical. Measurements matched for all five frames on both 1280px desktop and 390px mobile viewports.
-- Copy and content: all product-specific copy is coherent for landscaping work, the brand is consistently “Landscaping Service,” and every visible phone link uses 512 792 0697.
+- Copy and content: all product-specific copy is coherent for landscaping work, the brand is consistently “Gonzalo Landscape and Tree Care,” and every visible phone link uses 512 792 0697.
 - Accessibility and behavior: semantic navigation, labels, image alt text, focus states, mobile tap targets, slider labeling, and status messaging are present. Menu, filters, comparison slider, phone/SMS links, and quote-form SMS preparation were exercised successfully. Browser diagnostics contained no console errors.
 - Hero placement: the matched before/after transformation is now the dominant right-hand visual in the top section, paired with the main headline and quote actions on the left. The slider is draggable, its labels correspond to the correct image sides, and the duplicated lower interactive comparison was removed.
 - Projects architecture: the dedicated Projects route follows the reference's oversized heading, compact filters, featured-work band, and denser archive rhythm. Three featured transformations explain the service performed, eight completed-project cards provide category proof, and six labeled process images document real project stages.
@@ -38,7 +38,7 @@
 **Full-view comparison evidence**
 
 - `qa-comparison.png` places the source and implementation in the same aligned top-viewport comparison. The shared condensed typography, warm cream canvas, dark green header, adobe CTA, five-item service strip, and landscaping image transition are visibly consistent.
-- The implementation intentionally expands the source direction into a complete functional service site. Differences in headline wording and exact vertical density reflect the requested “Landscaping Service” brand and added conversion content, not unresolved fidelity drift.
+- The implementation intentionally expands the source direction into a complete functional service site. Differences in headline wording and exact vertical density reflect the “Gonzalo Landscape and Tree Care” brand and added conversion content, not unresolved fidelity drift.
 
 **Focused region comparison evidence**
 
