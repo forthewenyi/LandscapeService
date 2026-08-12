@@ -13,7 +13,7 @@
   --clip-y: 9%;
   --photo-aspect: 15 / 8;
   --page-gutter: clamp(20px, 3.5vw, 58px);
-  --header-height: 84px;
+  --header-height: 142px;
   --section-space: clamp(72px, 8vw, 120px);
   --section-space-compact: clamp(56px, 6vw, 88px);
   --tap-target: 44px;
@@ -109,10 +109,11 @@ a {
   top: 0;
   z-index: 30;
   display: grid;
-  grid-template-columns: minmax(220px, 1fr) auto auto;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-rows: auto auto;
   align-items: center;
-  min-height: 84px;
-  padding: 14px var(--page-gutter);
+  min-height: var(--header-height);
+  padding: 0 var(--page-gutter) 10px;
   color: var(--plaster);
   background: var(--cedar);
   border-bottom: 1px solid rgba(230, 217, 193, 0.26);
@@ -125,10 +126,18 @@ a {
 
 .brand {
   display: inline-flex;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  justify-self: center;
+  justify-content: center;
   gap: 0.3em;
   align-items: center;
-  width: fit-content;
-  font-size: clamp(1.65rem, 2.2vw, 2.2rem);
+  width: min(720px, 100%);
+  padding: 13px 28px 11px;
+  color: var(--cedar-deep);
+  background: var(--limestone);
+  border-radius: 0 0 22px 22px;
+  font-size: clamp(2rem, 2.7vw, 2.75rem);
   line-height: 1;
 }
 
@@ -149,9 +158,12 @@ a {
 
 .site-nav {
   display: flex;
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
   align-items: center;
   gap: clamp(20px, 3vw, 46px);
-  margin-right: clamp(22px, 3vw, 46px);
+  margin: 8px 0 0;
   font-size: 0.82rem;
   font-weight: 700;
 }
@@ -198,8 +210,12 @@ a {
 
 .header-actions {
   display: flex;
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: end;
   align-items: center;
   gap: 24px;
+  margin-top: 8px;
 }
 
 .header-phone {
@@ -1602,7 +1618,7 @@ a {
 
 @media (max-width: 1120px) {
   :root {
-    --header-height: 132px;
+    --header-height: 142px;
   }
 
   .site-header {
@@ -1610,10 +1626,10 @@ a {
   }
 
   .site-nav {
-    grid-column: 1 / -1;
+    grid-column: 1;
     grid-row: 2;
-    justify-content: center;
-    margin: 10px 0 0;
+    justify-content: start;
+    margin: 8px 0 0;
   }
 
   .service-index {
@@ -1637,6 +1653,7 @@ a {
 
   .site-header {
     grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-rows: auto;
     min-height: var(--header-height);
     padding-top: 10px;
     padding-bottom: 10px;
@@ -1644,9 +1661,18 @@ a {
 
   .brand {
     display: grid;
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+    justify-content: start;
     grid-template-columns: auto minmax(0, 1fr);
     gap: 0 0.34em;
     min-width: 0;
+    width: fit-content;
+    padding: 0;
+    color: var(--plaster);
+    background: transparent;
+    border-radius: 0;
     font-size: clamp(1.15rem, 5.5vw, 1.65rem);
     line-height: 0.94;
   }
