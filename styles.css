@@ -319,6 +319,7 @@ a {
 }
 
 .text-link {
+  padding: 10px 0;
   font-size: 0.9rem;
   font-weight: 700;
 }
@@ -1387,6 +1388,9 @@ a {
 }
 
 .quote-email a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap-target);
   color: var(--plaster);
   font-weight: 700;
   overflow-wrap: anywhere;
@@ -1553,7 +1557,7 @@ a {
 .footer-links a {
   display: flex;
   align-items: center;
-  min-height: 32px;
+  min-height: var(--tap-target);
 }
 
 .js-enabled .reveal {
