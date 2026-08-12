@@ -123,6 +123,18 @@ quoteForm?.addEventListener("submit", (event) => {
     .filter(Boolean);
   const details = String(formData.get("details") || "").trim();
 
+  if (!name) {
+    formStatus.textContent = "Enter your name to prepare the quote request.";
+    quoteForm.querySelector('[name="name"]')?.focus();
+    return;
+  }
+
+  if (!location) {
+    formStatus.textContent = "Enter the property ZIP or address.";
+    quoteForm.querySelector('[name="location"]')?.focus();
+    return;
+  }
+
   if (!services.length) {
     formStatus.textContent = "Choose at least one service before preparing your text.";
     quoteForm.querySelector('[name="service"]')?.focus();
