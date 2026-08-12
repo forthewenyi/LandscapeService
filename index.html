@@ -1,229 +1,336 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Call or text Angel's Lawn Service at 512 934 2000 for mowing, weed control, edging, garden bed mulch, and tree trimming."
+      content="Farm-rooted landscaping for Austin and surrounding communities. Tree and lawn care, gardens, patios, decks, and fences backed by 30 years of family experience."
     />
-    <title>Angel's Lawn Service</title>
-    <link rel="preconnect" href="https://images.unsplash.com" />
+    <meta name="theme-color" content="#123b31" />
+    <title>Landscaping Service | Austin, Texas</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23123b31'/%3E%3Cpath d='M18 42C18 25 30 13 48 14C47 32 35 44 18 42Z' fill='%23e6d9c1'/%3E%3Cpath d='M19 43C28 34 35 27 47 16' stroke='%23c4512f' stroke-width='4'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header" data-header>
-      <a class="brand" href="#top" aria-label="Angel's Lawn Service home">
-        <span class="brand-mark" aria-hidden="true">
-          <span class="brand-halo"></span>
-          <span class="brand-initial">A</span>
-          <span class="brand-grass"></span>
-        </span>
-        <span>Angel's Lawn Service</span>
+      <a class="brand display-type" href="#top" aria-label="Landscaping Service home">
+        Landscaping Service
       </a>
-      <nav class="site-nav" aria-label="Primary navigation">
+
+      <button
+        class="menu-toggle display-type"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        data-menu-toggle
+      >
+        Menu
+      </button>
+
+      <nav class="site-nav" id="primary-navigation" aria-label="Primary navigation" data-nav>
         <a href="#services">Services</a>
-        <a href="#work">Work</a>
-        <a href="#quote">Quote</a>
-        <a class="nav-phone" href="tel:+15129342000">512 934 2000</a>
+        <a href="#projects">Projects</a>
+        <a href="#story">Our story</a>
+        <a href="#process">Process</a>
       </nav>
+
+      <div class="header-actions">
+        <a class="header-phone" href="tel:+15127920697">512 792 0697</a>
+        <a class="button button-accent" href="#quote">Start a text quote</a>
+      </div>
     </header>
 
     <main id="top">
-      <section class="hero" aria-label="Angel's Lawn Service">
-        <img
-          class="hero-image"
-          src="assets/angel-lawn-cover.jpg"
-          data-fallback-src="https://images.unsplash.com/photo-1734303023491-db8037a21f09?auto=format&fit=crop&fm=jpg&q=80&w=2400"
-          alt="Fresh residential lawn in front of homes with a small tree and clean edging"
-        />
-        <div class="hero-shade" aria-hidden="true"></div>
-        <div class="hero-content reveal">
-          <p class="eyebrow">Mowing, weed control, edging, mulch, and tree trimming</p>
-          <h1>Angel's Lawn Service</h1>
-          <p class="motto">On-time lawn care, quick service, fair pricing.</p>
-          <p class="hero-copy">
-            Book clean mowing, sharp edging, weed control, fresh garden bed
-            mulch, and light tree trimming with one dependable local crew.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="tel:+15129342000">Call Angel</a>
-            <a class="button secondary" href="sms:+15129342000">Text for a quote</a>
-            <a class="button secondary" href="#services">See services</a>
-          </div>
-          <p class="hero-contact">
-            Call or text <a href="tel:+15129342000">512 934 2000</a>
-          </p>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="kicker">Serving Austin and surrounding communities</p>
+          <h1 class="display-type" id="hero-title">Farm-rooted<br />landscape care.</h1>
         </div>
-      </section>
-
-      <section class="intro section-pad">
-        <div class="section-label">What we handle</div>
-        <div class="intro-copy reveal">
-          <h2>The yard work homeowners need most, handled by Angel.</h2>
+        <div class="hero-intro reveal">
           <p>
-            Simple scheduling, clean results, fresh mulch beds, and a fair
-            quote before work starts.
+            Generations of farmers. Thirty years of family experience. Honest quotes and clean, dependable work.
           </p>
-        </div>
-      </section>
-
-      <section class="services" id="services" aria-label="Lawn care services">
-        <div class="services-grid">
-          <article class="service-item reveal">
-            <span class="service-number">01</span>
-            <h3>Mowing</h3>
-            <p>Even cuts that make the lawn look clean from the street.</p>
-          </article>
-          <article class="service-item reveal">
-            <span class="service-number">02</span>
-            <h3>Weed control</h3>
-            <p>Targeted weed killing around lawns, beds, fence lines, and edges.</p>
-          </article>
-          <article class="service-item reveal">
-            <span class="service-number">03</span>
-            <h3>Edging</h3>
-            <p>Clean borders along sidewalks, driveways, patios, and garden beds.</p>
-          </article>
-          <article class="service-item reveal">
-            <span class="service-number">04</span>
-            <h3>Mulch beds</h3>
-            <p>Fresh mulch installed around garden beds, trees, and curb edges.</p>
-          </article>
-          <article class="service-item reveal">
-            <span class="service-number">05</span>
-            <h3>Tree trimming</h3>
-            <p>Cutting low branches, overgrowth, and small trees back into shape.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="proof section-pad" id="work" aria-label="Before and after yard work">
-        <div class="section-label">Before and after</div>
-        <div class="proof-content reveal">
-          <div class="proof-copy">
-            <h2>Cleanup work you can see right away.</h2>
-            <p>
-              Weed removal, trimming, mulch, and bed cleanup make outdoor areas
-              look cared for again.
-            </p>
-          </div>
-          <div class="before-after">
-            <figure class="proof-photo">
-              <span class="photo-tag">Before</span>
-              <img
-                src="assets/before-wall-cleanup.jpg"
-                data-missing-label="Before photo: retaining wall with weeds before cleanup"
-                alt="Before cleanup showing weeds growing around a retaining wall"
-              />
-              <figcaption>Overgrowth and weeds around the wall.</figcaption>
-            </figure>
-            <figure class="proof-photo">
-              <span class="photo-tag">After</span>
-              <img
-                src="assets/after-wall-cleanup.jpg"
-                data-missing-label="After photo: retaining wall cleaned up after service"
-                alt="After cleanup showing a retaining wall and cleared yard area"
-              />
-              <figcaption>Cleaned up and ready for the next step.</figcaption>
-            </figure>
+          <div class="hero-contact">
+            <a class="button button-primary" href="#quote">Text photos for a fast quote</a>
+            <a class="text-link" href="#services">Explore services</a>
           </div>
         </div>
       </section>
 
-      <section class="work-band" aria-label="How service works">
-        <div class="work-visual">
+      <section class="service-index" id="services" aria-label="Landscaping services">
+        <a class="service-row reveal" href="#projects" data-service-filter="lawn">
+          <span class="service-number display-type">01</span>
+          <h2 class="display-type">Tree + lawn care</h2>
+          <p>Tree trimming, mowing, clean edging, weed and poison-ivy removal, cleanup, and haul-away.</p>
+          <span class="service-action">View related work →</span>
+        </a>
+        <a class="service-row reveal" href="#projects" data-service-filter="gardens">
+          <span class="service-number display-type">02</span>
+          <h2 class="display-type">Gardens + planting</h2>
+          <p>Native plants, cactus care, garden transformations, mulch, and masonry or timber bed edging.</p>
+          <span class="service-action">View related work →</span>
+        </a>
+        <a class="service-row reveal" href="#projects" data-service-filter="outdoor">
+          <span class="service-number display-type">03</span>
+          <h2 class="display-type">Patios + hardscapes</h2>
+          <p>Patios, gravel paths, stonework, grading, borders, and durable outdoor gathering spaces.</p>
+          <span class="service-action">View related work →</span>
+        </a>
+        <a class="service-row reveal" href="#projects" data-service-filter="outdoor">
+          <span class="service-number display-type">04</span>
+          <h2 class="display-type">Decks + fences</h2>
+          <p>Deck construction, new fences, repairs, and staining to complete and protect the property.</p>
+          <span class="service-action">View related work →</span>
+        </a>
+      </section>
+
+      <section class="feature-landscape" aria-label="Finished residential landscaping">
+        <div class="photo-frame photo-frame-wide reveal">
           <img
-            class="work-image"
-            src="assets/mulch-garden-bed.jpg"
-            data-fallback-src="https://images.unsplash.com/photo-1734303023491-db8037a21f09?auto=format&fit=crop&fm=jpg&q=80&w=1600"
-            alt="Bags of hardwood mulch loaded in a truck for garden bed service"
+            src="assets/projects/backyard-landscape-finished-after.jpg"
+            alt="Completed backyard landscape with fresh lawn, gravel paths, stone borders, mulch, and plants"
           />
         </div>
-        <div class="work-content reveal">
-          <p class="eyebrow">Simple scheduling</p>
-          <h2>Fast yard service without surprise pricing.</h2>
-          <ol class="steps">
-            <li>
-              <span>Send the property details.</span>
-              Share your address, yard size, and what needs to be cut or treated.
-            </li>
-            <li>
-              <span>Get a fair quote.</span>
-              Pricing is based on the work, yard condition, materials, and visit frequency.
-            </li>
-            <li>
-              <span>Keep the yard ready.</span>
-              Angel shows up on schedule and leaves the yard looking finished.
-            </li>
-          </ol>
+      </section>
+
+      <section class="story section-pad" id="story" aria-labelledby="story-title">
+        <div class="story-heading reveal">
+          <p class="kicker">Our family story</p>
+          <h2 class="display-type" id="story-title">Raised on the land.<br />Working for Austin.</h2>
+        </div>
+        <div class="story-copy reveal">
+          <p>Our family’s roots run through Guatemala and Sombrerete, Zacatecas, where generations learned to read the land, care for plants, and finish the work they started.</p>
+          <p>Today, we bring 30 years of family experience to Central Texas yards—with special knowledge of native plants, cactus, practical landscape construction, and long-term property care.</p>
+          <p class="story-signature display-type">Guatemala · Zacatecas · Austin</p>
         </div>
       </section>
 
-      <section class="promise section-pad">
-        <div class="section-label">Why customers call</div>
-        <div class="promise-list reveal">
-          <p>On-time visits</p>
-          <p>Quick service</p>
-          <p>Fair pricing</p>
-          <p>Healthy grass</p>
+      <section class="projects section-pad" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading reveal">
+          <p class="kicker">Project gallery</p>
+          <h2 class="display-type" id="projects-title">The work<br />speaks clearly.</h2>
+          <p>Browse real family projects by service. Every yard starts with its condition, its purpose, and a practical plan.</p>
+        </div>
+
+        <div class="project-filters" aria-label="Filter landscaping projects">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-button" type="button" data-filter="lawn" aria-pressed="false">Tree + lawn</button>
+          <button class="filter-button" type="button" data-filter="gardens" aria-pressed="false">Gardens + planting</button>
+          <button class="filter-button" type="button" data-filter="outdoor" aria-pressed="false">Outdoor builds</button>
+        </div>
+
+        <div class="project-grid" data-project-grid>
+          <article class="project-card reveal" data-category="lawn">
+            <div class="photo-frame project-photo">
+              <img src="assets/projects/backyard-lawn-and-beds-progress.jpg" alt="New backyard lawn and freshly prepared planting beds" />
+            </div>
+            <div class="project-meta">
+              <span class="project-index display-type">01</span>
+              <div>
+                <h3 class="display-type">Lawn + bed installation</h3>
+                <p class="project-location">Residential project</p>
+                <p>Fresh turf, shaped planting beds, clean transitions, and a complete yard reset.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="gardens">
+            <div class="photo-frame project-photo">
+              <img src="assets/projects/front-garden-fresh-mulch-after.jpg" alt="Front garden after weed removal, plant shaping, and fresh mulch" />
+            </div>
+            <div class="project-meta">
+              <span class="project-index display-type">02</span>
+              <div>
+                <h3 class="display-type">Front garden reset</h3>
+                <p class="project-location">Garden care</p>
+                <p>Overgrowth removal, selective pruning, fresh mulch, and a cleaner entry.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="outdoor">
+            <div class="photo-frame project-photo">
+              <img src="assets/projects/side-yard-river-rock-path-after.jpg" alt="Completed side-yard river-rock path with defined landscape edging" />
+            </div>
+            <div class="project-meta">
+              <span class="project-index display-type">03</span>
+              <div>
+                <h3 class="display-type">River-rock path</h3>
+                <p class="project-location">Outdoor build</p>
+                <p>A durable low-maintenance path with defined edges and improved side-yard access.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="outdoor">
+            <div class="photo-frame project-photo">
+              <img src="assets/projects/front-yard-hardscape-and-beds-progress.jpg" alt="Front-yard hardscape installation with stone borders and prepared planting beds" />
+            </div>
+            <div class="project-meta">
+              <span class="project-index display-type">04</span>
+              <div>
+                <h3 class="display-type">Hardscape + beds</h3>
+                <p class="project-location">Landscape construction</p>
+                <p>Stonework, defined beds, grading, and a practical foundation for planting.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="gardens">
+            <div class="photo-frame project-photo">
+              <img src="assets/projects/backyard-landscape-finished-after.jpg" alt="Finished backyard with lawn, gravel paths, stone edging, mulch, and new plants" />
+            </div>
+            <div class="project-meta">
+              <span class="project-index display-type">05</span>
+              <div>
+                <h3 class="display-type">Backyard transformation</h3>
+                <p class="project-location">Complete landscape</p>
+                <p>Lawn, pathways, planting zones, stone borders, and mulch brought together as one yard.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="outdoor">
+            <div class="photo-frame project-photo">
+              <img src="assets/projects/side-yard-gravel-path-after.jpg" alt="Finished side-yard gravel path beside the home" />
+            </div>
+            <div class="project-meta">
+              <span class="project-index display-type">06</span>
+              <div>
+                <h3 class="display-type">Side-yard rebuild</h3>
+                <p class="project-location">Access + drainage</p>
+                <p>An overgrown side yard cleared and rebuilt as a clean, usable gravel path.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="outdoor">
+            <div class="photo-frame project-photo">
+              <img src="assets/projects/backyard-gravel-fire-pit-patio-after.jpg" alt="Finished backyard gravel patio with limestone retaining walls and a central fire pit" />
+            </div>
+            <div class="project-meta">
+              <span class="project-index display-type">07</span>
+              <div>
+                <h3 class="display-type">Fire-pit patio</h3>
+                <p class="project-location">Backyard hardscape</p>
+                <p>A gravel seating area, limestone retaining walls, central fire pit, and finished borders.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="outdoor">
+            <div class="photo-frame project-photo">
+              <img src="assets/projects/backyard-horizontal-wood-fence-enclosure-after.jpg" alt="New horizontal-board wood enclosure and gate built beside a brick home" />
+            </div>
+            <div class="project-meta">
+              <span class="project-index display-type">08</span>
+              <div>
+                <h3 class="display-type">Custom wood enclosure</h3>
+                <p class="project-location">Fence + structure</p>
+                <p>Horizontal-board construction, a framed gate, secure hardware, and a clean fit beside the home.</p>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section class="quote" id="quote" aria-label="Request a lawn service quote">
+      <section class="results section-pad" id="results" aria-labelledby="results-title">
+        <div class="results-copy reveal">
+          <p class="kicker">Before + after</p>
+          <h2 class="display-type" id="results-title">From overgrown to usable.</h2>
+          <p>Drag the handle to compare the same side yard before cleanup and after the finished gravel path.</p>
+          <ul class="scope-list">
+            <li>Remove weeds + invasive growth</li>
+            <li>Clear and prepare the ground</li>
+            <li>Install gravel path + clean edging</li>
+          </ul>
+        </div>
+
+        <div class="compare photo-frame reveal" data-compare style="--compare-position: 50%">
+          <img class="compare-before" src="assets/projects/side-yard-overgrowth-before.jpg" alt="Overgrown side yard before landscaping work" />
+          <div class="compare-after" data-compare-after>
+            <img src="assets/projects/side-yard-gravel-path-after.jpg" alt="The same side yard after cleanup and gravel-path installation" />
+          </div>
+          <span class="compare-label compare-label-before display-type">Before</span>
+          <span class="compare-label compare-label-after display-type">After</span>
+          <span class="compare-divider" aria-hidden="true"></span>
+          <input
+            class="compare-range"
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            aria-label="Reveal the landscaping before and after comparison"
+            data-compare-range
+          />
+        </div>
+      </section>
+
+      <section class="process section-pad" id="process" aria-labelledby="process-title">
+        <div class="section-heading reveal">
+          <p class="kicker">Simple from the start</p>
+          <h2 class="display-type" id="process-title">From yard photos to finished work.</h2>
+        </div>
+        <ol class="process-list">
+          <li class="reveal">
+            <span class="display-type">01</span>
+            <div><h3 class="display-type">Send the details</h3><p>Text photos, the property address, and the work you want handled.</p></div>
+          </li>
+          <li class="reveal">
+            <span class="display-type">02</span>
+            <div><h3 class="display-type">Get a fair quote</h3><p>We price the work based on size, condition, materials, and frequency.</p></div>
+          </li>
+          <li class="reveal">
+            <span class="display-type">03</span>
+            <div><h3 class="display-type">Enjoy the reset</h3><p>We arrive on schedule and leave the lawn, beds, and hard edges clean.</p></div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="quote" id="quote" aria-labelledby="quote-title">
         <div class="quote-copy reveal">
-          <p class="eyebrow">Start here</p>
-          <h2>Tell us what your yard needs.</h2>
-          <p>
-            Call or text <a href="tel:+15129342000">512 934 2000</a>. You can
-            also use this form to prepare the details before you message Angel
-            about mowing, mulch, edging, weeds, or tree trimming.
-          </p>
+          <p class="kicker">Fastest way to reach us</p>
+          <h2 class="display-type" id="quote-title">Text for a quote.</h2>
+          <p>Tell us what the property needs. We’ll prepare a text to our crew—just attach your yard photos and tap send.</p>
+          <a class="quote-phone display-type" href="tel:+15127920697">512 792 0697</a>
         </div>
+
         <form class="quote-form reveal" data-quote-form>
-          <label>
-            Name
-            <input name="name" type="text" autocomplete="name" required />
-          </label>
-          <label>
-            Phone or email
-            <input name="contact" type="text" autocomplete="email" required />
-          </label>
+          <label>Name<input name="name" type="text" autocomplete="name" required /></label>
+          <label>Property address or ZIP<input name="location" type="text" autocomplete="street-address" required /></label>
           <label>
             Service needed
             <select name="service" required>
               <option value="">Choose a service</option>
-              <option>Mowing</option>
-              <option>Weed control</option>
-              <option>Edging</option>
-              <option>Garden bed mulch</option>
-              <option>Tree trimming</option>
-              <option>Multiple services</option>
+              <option>Tree and lawn care</option>
+              <option>Gardens and planting</option>
+              <option>Patio or hardscape work</option>
+              <option>Deck or fence work</option>
+              <option>Weed, poison ivy, or property cleanup</option>
+              <option>Multiple landscaping services</option>
             </select>
           </label>
-          <label>
-            Property details
-            <textarea
-              name="details"
-              rows="4"
-              placeholder="Yard size, timing, gate access, or anything else useful"
-            ></textarea>
-          </label>
-          <button class="button primary" type="submit">Prepare text message</button>
+          <label>Property details<textarea name="details" rows="4" placeholder="Yard size, timing, access, materials, or anything else useful"></textarea></label>
+          <button class="button button-primary" type="submit">Open text request</button>
+          <p class="form-note">Your text app will open with these details. Attach 3–5 photos and tap Send to deliver your request.</p>
           <p class="form-status" data-form-status role="status" aria-live="polite"></p>
-          <div class="contact-actions" aria-label="Contact Angel">
-            <a class="contact-link" href="tel:+15129342000">Call 512 934 2000</a>
-            <a class="contact-link" href="sms:+15129342000">Text 512 934 2000</a>
-          </div>
         </form>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Angel's Lawn Service</p>
+      <a class="brand display-type" href="#top">Landscaping Service</a>
+      <p>Thirty years of family experience in tree and lawn care, gardens, patios, decks, and fences. Serving Austin and surrounding communities.</p>
       <div class="footer-links">
-        <a href="tel:+15129342000">Call 512 934 2000</a>
-        <a href="sms:+15129342000">Text Angel</a>
+        <a href="tel:+15127920697">Call 512 792 0697</a>
+        <a href="sms:+15127920697">Text for a quote</a>
         <a href="#top">Back to top</a>
       </div>
     </footer>
