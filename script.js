@@ -1,3 +1,5 @@
+document.documentElement.classList.add("js-enabled");
+
 const PHONE_DIGITS = "15127920697";
 const PHONE_DISPLAY = "512 792 0697";
 
@@ -8,8 +10,7 @@ const revealItems = document.querySelectorAll(".reveal");
 const filterButtons = document.querySelectorAll("[data-filter]");
 const serviceFilterLinks = document.querySelectorAll("[data-service-filter]");
 const projectCards = document.querySelectorAll("[data-category]");
-const compare = document.querySelector("[data-compare]");
-const compareRange = document.querySelector("[data-compare-range]");
+const compareWidgets = document.querySelectorAll("[data-compare]");
 const quoteForm = document.querySelector("[data-quote-form]");
 const formStatus = document.querySelector("[data-form-status]");
 
@@ -20,21 +21,35 @@ const setHeaderState = () => {
 setHeaderState();
 window.addEventListener("scroll", setHeaderState, { passive: true });
 
+const setMenuState = (isOpen) => {
+  menuToggle?.setAttribute("aria-expanded", String(isOpen));
+  menuToggle?.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+  if (menuToggle) menuToggle.textContent = isOpen ? "Close" : "Menu";
+  nav?.classList.toggle("is-open", isOpen);
+  document.body.classList.toggle("menu-open", isOpen);
+};
+
 menuToggle?.addEventListener("click", () => {
-  const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
-  menuToggle.setAttribute("aria-expanded", String(!isOpen));
-  menuToggle.textContent = isOpen ? "Menu" : "Close";
-  nav?.classList.toggle("is-open", !isOpen);
-  document.body.classList.toggle("menu-open", !isOpen);
+  setMenuState(menuToggle.getAttribute("aria-expanded") !== "true");
 });
 
 nav?.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", () => {
-    menuToggle?.setAttribute("aria-expanded", "false");
-    if (menuToggle) menuToggle.textContent = "Menu";
-    nav.classList.remove("is-open");
-    document.body.classList.remove("menu-open");
+    setMenuState(false);
   });
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && menuToggle?.getAttribute("aria-expanded") === "true") {
+    setMenuState(false);
+    menuToggle.focus();
+  }
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 820 && menuToggle?.getAttribute("aria-expanded") === "true") {
+    setMenuState(false);
+  }
 });
 
 if ("IntersectionObserver" in window) {
@@ -65,10 +80,17 @@ const setProjectFilter = (filter) => {
   });
 
   projectCards.forEach((card) => {
-    const shouldShow = filter === "all" || card.dataset.category === filter;
+    const categories = card.dataset.category.split(/\s+/);
+    const shouldShow = filter === "all" || categories.includes(filter);
     card.classList.toggle("is-filtered-out", !shouldShow);
+    card.hidden = !shouldShow;
   });
 };
+
+const requestedFilter = new URLSearchParams(window.location.search).get("filter");
+if (requestedFilter && [...filterButtons].some((button) => button.dataset.filter === requestedFilter)) {
+  setProjectFilter(requestedFilter);
+}
 
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => setProjectFilter(button.dataset.filter));
@@ -82,8 +104,11 @@ serviceFilterLinks.forEach((link) => {
   });
 });
 
-compareRange?.addEventListener("input", (event) => {
-  compare?.style.setProperty("--compare-position", `${event.target.value}%`);
+compareWidgets.forEach((widget) => {
+  const range = widget.querySelector("[data-compare-range]");
+  range?.addEventListener("input", (event) => {
+    widget.style.setProperty("--compare-position", `${event.target.value}%`);
+  });
 });
 
 quoteForm?.addEventListener("submit", (event) => {
@@ -92,10 +117,24 @@ quoteForm?.addEventListener("submit", (event) => {
   const formData = new FormData(quoteForm);
   const name = String(formData.get("name") || "").trim();
   const location = String(formData.get("location") || "").trim();
-  const service = String(formData.get("service") || "").trim();
+  const services = formData
+    .getAll("service")
+    .map((service) => String(service).trim())
+    .filter(Boolean);
   const details = String(formData.get("details") || "").trim();
+
+  if (!services.length) {
+    formStatus.textContent = "Choose at least one service before opening the text request.";
+    quoteForm.querySelector('[name="service"]')?.focus();
+    return;
+  }
+
+  const serviceSummary = new Intl.ListFormat("en", {
+    style: "long",
+    type: "conjunction",
+  }).format(services);
   const message = [
-    `Hi, my name is ${name}. I would like a quote for ${service}.`,
+    `Hi, my name is ${name}. I would like a quote for ${serviceSummary}.`,
     `The property is at ${location}.`,
     details ? `Property details: ${details}.` : "",
     "I will attach yard photos to this text.",

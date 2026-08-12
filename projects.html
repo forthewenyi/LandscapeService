@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="See real Austin-area landscaping projects, including lawn and garden work, patios, paths, decks, fences, and clearly labeled before-and-after results." />
+    <meta name="theme-color" content="#123b31" />
+    <title>Projects | Landscaping Service</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23123b31'/%3E%3Cpath d='M18 42C18 25 30 13 48 14C47 32 35 44 18 42Z' fill='%23e6d9c1'/%3E%3Cpath d='M19 43C28 34 35 27 47 16' stroke='%23c4512f' stroke-width='4'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header" data-header>
+      <a class="brand display-type" href="index.html">Landscaping Service</a>
+      <button class="menu-toggle display-type" type="button" aria-expanded="false" aria-controls="primary-navigation" data-menu-toggle>Menu</button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Primary navigation" data-nav>
+        <a href="index.html#services">Services</a>
+        <a class="is-current" href="projects.html" aria-current="page">Projects</a>
+        <a href="story.html">Our story</a>
+        <a href="index.html#quote">Get a quote</a>
+      </nav>
+      <div class="header-actions">
+        <a class="header-phone" href="tel:+15127920697">512 792 0697</a>
+        <a class="button button-accent" href="index.html#quote">Request a quote</a>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="projects page-projects section-pad" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading reveal">
+          <p class="kicker">Project gallery</p>
+          <h1 class="display-type" id="projects-title">Real yards.<br />Clear results.</h1>
+          <p>Filter real projects by service to see the condition we started with, the work performed, and the finished result.</p>
+        </div>
+
+        <div class="project-filters" aria-label="Filter landscaping projects">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-button" type="button" data-filter="lawn" aria-pressed="false">Tree + lawn</button>
+          <button class="filter-button" type="button" data-filter="gardens" aria-pressed="false">Gardens + planting</button>
+          <button class="filter-button" type="button" data-filter="hardscapes" aria-pressed="false">Patios + hardscapes</button>
+          <button class="filter-button" type="button" data-filter="fences" aria-pressed="false">Decks + fences</button>
+        </div>
+
+        <section class="featured-projects" aria-labelledby="featured-projects-title">
+          <div class="featured-projects-heading reveal">
+            <p class="kicker">Before + after</p>
+            <h2 class="display-type" id="featured-projects-title">See what changed.</h2>
+            <p>Each before-and-after story connects the starting condition to the work completed and the practical result.</p>
+          </div>
+
+          <article class="featured-project featured-project-wide reveal" data-category="hardscapes">
+            <div class="compare photo-frame" data-compare style="--compare-position: 50%">
+              <img loading="lazy" decoding="async" class="compare-before" src="assets/projects/side-yard-overgrowth-before.jpg" alt="Overgrown side yard before cleanup and path construction" />
+              <div class="compare-after"><img loading="lazy" decoding="async" src="assets/projects/side-yard-gravel-path-after.jpg" alt="The same side yard after clearing, grading, edging, and gravel-path installation" /></div>
+              <span class="compare-label compare-label-before display-type">Before</span><span class="compare-label compare-label-after display-type">After</span><span class="compare-divider" aria-hidden="true"></span><input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Reveal the side-yard path before and after" data-compare-range />
+            </div>
+            <div class="featured-project-copy"><p class="project-location">Side-yard access path</p><h3 class="display-type">Overgrowth to compacted path</h3><p>Service provided: vegetation removal, clearing, grading, a compacted gravel walkway, stone edging, and fresh mulch.</p></div>
+          </article>
+
+          <div class="featured-project-pair">
+            <article class="featured-project reveal" data-category="gardens"><div class="before-after-images"><figure><img loading="lazy" decoding="async" src="assets/projects/front-garden-overgrown-before.jpg" alt="Overgrown front planting bed before garden cleanup" /><figcaption class="display-type">Before</figcaption></figure><figure><img loading="lazy" decoding="async" src="assets/projects/front-garden-fresh-mulch-after.jpg" alt="Front planting bed after cleanup, pruning, edging, and mulch" /><figcaption class="display-type">After</figcaption></figure></div><div class="featured-project-copy"><p class="project-location">Garden cleanup + mulch</p><h3 class="display-type">Front garden reset</h3><p>Service provided: weed and overgrowth removal, selective pruning, bed shaping, clean edging, and fresh mulch.</p></div></article>
+            <article class="featured-project reveal" data-category="gardens hardscapes lawn"><div class="before-after-images"><figure><img loading="lazy" decoding="async" src="assets/projects/backyard-bare-ground-before.jpg" alt="Bare backyard before the full landscape installation" /><figcaption class="display-type">Before</figcaption></figure><figure><img loading="lazy" decoding="async" src="assets/projects/backyard-landscape-finished-after.jpg" alt="Backyard after lawn, gravel paths, stone borders, mulch, and planting" /><figcaption class="display-type">After</figcaption></figure></div><div class="featured-project-copy"><p class="project-location">Complete landscape installation</p><h3 class="display-type">Bare yard to finished landscape</h3><p>Service provided: grading, lawn, pathways, stone borders, planting zones, mulch, and final cleanup.</p></div></article>
+          </div>
+        </section>
+
+        <div class="project-grid-heading reveal"><p class="kicker">More completed work</p><h2 class="display-type">Find a project like yours.</h2></div>
+        <div class="project-grid" data-project-grid>
+          <article class="project-card reveal" data-category="lawn gardens"><div class="photo-frame project-photo"><img loading="lazy" decoding="async" src="assets/projects/backyard-lawn-and-beds-progress.jpg" alt="New backyard lawn beside shaped planting beds awaiting final planting and mulch" /></div><div class="project-meta"><span class="project-index display-type">01</span><div><h2 class="display-type">Lawn + bed installation</h2><p class="project-location">Installation in progress</p><p>Fresh turf, shaped planting beds, and clean stone transitions before the final bed finish.</p></div></div></article>
+          <article class="project-card reveal" data-category="gardens"><div class="photo-frame project-photo"><img loading="lazy" decoding="async" src="assets/projects/front-garden-fresh-mulch-after.jpg" alt="Front garden after weed removal, plant shaping, and fresh mulch" /></div><div class="project-meta"><span class="project-index display-type">02</span><div><h2 class="display-type">Front garden reset</h2><p class="project-location">Garden care</p><p>Overgrowth removal, selective pruning, fresh mulch, and a cleaner entry.</p></div></div></article>
+          <article class="project-card project-card-portrait reveal" data-category="hardscapes"><div class="photo-frame project-photo"><img loading="lazy" decoding="async" src="assets/projects/side-yard-river-rock-path-after.jpg" alt="Completed compacted side-yard walkway bordered by river rock" /></div><div class="project-meta"><span class="project-index display-type">03</span><div><h2 class="display-type">Path + river-rock border</h2><p class="project-location">Side-yard access</p><p>A compacted walkway bordered by river rock for a clean, low-maintenance side yard.</p></div></div></article>
+          <article class="project-card reveal" data-category="gardens hardscapes"><div class="photo-frame project-photo"><img loading="lazy" decoding="async" src="assets/projects/front-yard-hardscape-and-beds-progress.jpg" alt="Front-yard installation in progress with a paver landing, stepping stones, river rock, and mulched beds" /></div><div class="project-meta"><span class="project-index display-type">04</span><div><h2 class="display-type">Paver landing + garden path</h2><p class="project-location">Installation in progress</p><p>A paver landing, stepping-stone paths, river-rock drainage, and refreshed planting beds.</p></div></div></article>
+          <article class="project-card reveal" data-category="gardens hardscapes lawn"><div class="photo-frame project-photo"><img loading="lazy" decoding="async" src="assets/projects/backyard-landscape-finished-after.jpg" alt="Finished backyard with lawn, compacted paths, stone edging, mulch, and new agaves" /></div><div class="project-meta"><span class="project-index display-type">05</span><div><h2 class="display-type">Backyard transformation</h2><p class="project-location">Complete landscape</p><p>Lawn, compacted paths, planting zones, stone borders, and mulch brought together as one yard.</p></div></div></article>
+          <article class="project-card project-card-portrait reveal" data-category="hardscapes gardens"><div class="photo-frame project-photo"><img loading="lazy" decoding="async" src="assets/projects/side-yard-gravel-path-after.jpg" alt="Finished compacted side-yard walkway with stone edging and a freshly mulched planting bed" /></div><div class="project-meta"><span class="project-index display-type">06</span><div><h2 class="display-type">Side-yard rebuild</h2><p class="project-location">Access path</p><p>An overgrown side yard cleared and rebuilt as a compacted walkway with stone edging and mulch.</p></div></div></article>
+          <article class="project-card reveal" data-category="hardscapes"><div class="photo-frame project-photo"><img loading="lazy" decoding="async" src="assets/projects/backyard-gravel-fire-pit-patio-after.jpg" alt="Finished backyard gravel patio with limestone retaining walls and a central fire pit" /></div><div class="project-meta"><span class="project-index display-type">07</span><div><h2 class="display-type">Fire-pit patio</h2><p class="project-location">Backyard hardscape</p><p>A gravel seating area, limestone retaining walls, central fire pit, and finished borders.</p></div></div></article>
+          <article class="project-card project-card-portrait reveal" data-category="fences"><div class="photo-frame project-photo"><img loading="lazy" decoding="async" src="assets/projects/backyard-horizontal-wood-fence-enclosure-after.jpg" alt="New horizontal-board utility enclosure and gate built beside a brick home" /></div><div class="project-meta"><span class="project-index display-type">08</span><div><h2 class="display-type">Custom utility enclosure</h2><p class="project-location">Fence + structure</p><p>Horizontal-board construction, a framed gate, secure hardware, and a clean fit beside the home.</p></div></div></article>
+        </div>
+
+        <section class="project-process" aria-labelledby="project-process-title">
+          <div class="project-grid-heading reveal"><div><p class="kicker">Documented across different jobs</p><h2 class="display-type" id="project-process-title">The work behind the finish.</h2></div><p>From clearing and grading to final bed details, these real project photos show how the work comes together.</p></div>
+          <div class="project-process-grid">
+            <figure class="reveal" data-category="hardscapes"><div class="photo-frame"><img loading="lazy" decoding="async" src="assets/projects/side-yard-cleared-before-installation.jpg" alt="Side yard cleared before installation of a new access path" /></div><figcaption><span class="display-type">01 · Clear</span>Opening the work area before path installation.</figcaption></figure>
+            <figure class="reveal" data-category="hardscapes lawn"><div class="photo-frame"><img loading="lazy" decoding="async" src="assets/projects/backyard-ground-grading-progress.jpg" alt="Backyard soil grading in progress before lawn and path installation" /></div><figcaption><span class="display-type">02 · Grade</span>Correcting the base before lawn and path work.</figcaption></figure>
+            <figure class="reveal" data-category="hardscapes"><div class="photo-frame"><img loading="lazy" decoding="async" src="assets/projects/backyard-landscape-fabric-progress.jpg" alt="Landscape fabric installed beneath a curved backyard path" /></div><figcaption><span class="display-type">03 · Prepare</span>Setting the path shape and weed-control layer.</figcaption></figure>
+            <figure class="reveal" data-category="hardscapes"><div class="photo-frame"><img loading="lazy" decoding="async" src="assets/projects/backyard-gravel-installation-progress.jpg" alt="Compacted path material being distributed over landscape fabric" /></div><figcaption><span class="display-type">04 · Install</span>Placing and leveling the path material.</figcaption></figure>
+            <figure class="reveal" data-category="gardens hardscapes"><div class="photo-frame"><img loading="lazy" decoding="async" src="assets/projects/backyard-mulch-and-path-progress.jpg" alt="Mulched planting beds and compacted paths during backyard installation" /></div><figcaption><span class="display-type">05 · Detail</span>Finishing bed lines, mulch, and transitions.</figcaption></figure>
+            <figure class="reveal" data-category="gardens"><div class="photo-frame"><img class="photo-straighten-left" loading="lazy" decoding="async" src="assets/projects/front-garden-bed-cleanup-progress.jpg" alt="Crew member removing unwanted growth from a front garden bed" /></div><figcaption><span class="display-type">06 · Maintain</span>Removing unwanted growth around established plants.</figcaption></figure>
+          </div>
+        </section>
+      </section>
+
+      <section class="page-cta">
+        <p class="kicker">Have a project in mind?</p>
+        <h2 class="display-type">Show us what needs work.</h2>
+        <a class="button button-accent" href="index.html#quote">Request a quote</a>
+      </section>
+    </main>
+
+    <footer class="site-footer"><a class="brand display-type" href="index.html">Landscaping Service</a><p>Thirty years of family experience serving Austin and surrounding communities.</p><div class="footer-links"><a href="tel:+15127920697">Call 512 792 0697</a><a href="sms:+15127920697">Text for a quote</a><a href="index.html">Home</a></div></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

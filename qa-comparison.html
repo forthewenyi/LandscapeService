@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Design QA Comparison</title>
+    <style>
+      * { box-sizing: border-box; }
+      body { margin: 0; padding: 28px; color: #faf4e7; background: #092b23; font: 600 14px/1.4 system-ui, sans-serif; }
+      h1 { margin: 0 0 18px; font-size: 18px; letter-spacing: .08em; text-transform: uppercase; }
+      .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+      figure { margin: 0; }
+      figcaption { margin-bottom: 8px; color: #e6d9c1; }
+      .crop { overflow: hidden; aspect-ratio: 3 / 2; border: 1px solid rgba(250,244,231,.35); background: #faf4e7; }
+      .crop img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; }
+    </style>
+  </head>
+  <body>
+    <h1>Projects layout comparison · aligned top viewport</h1>
+    <div class="grid">
+      <figure>
+        <figcaption>Source direction</figcaption>
+        <div class="crop"><img src="reference-alexander-projects-top.png" alt="Alexander Marchant Projects layout reference" /></div>
+      </figure>
+      <figure>
+        <figcaption>Implemented landscaping service</figcaption>
+        <div class="crop"><img src="implementation-projects-page.png" alt="Rendered landscaping Projects page" /></div>
+      </figure>
+    </div>
+  </body>
+</html>
