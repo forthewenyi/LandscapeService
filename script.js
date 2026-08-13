@@ -102,7 +102,7 @@ const setProjectFilter = (filter) => {
   const selectedLabel = selectedButton?.textContent.trim() || "Projects";
   if (projectGridKicker && projectGridTitle && projectGridSummary) {
     const showingAll = filter === "all";
-    projectGridKicker.textContent = showingAll ? "Project work + available services" : "Filtered by service";
+    projectGridKicker.textContent = showingAll ? "More work + available services" : "Filtered by service";
     projectGridTitle.textContent = showingAll ? "Find a project like yours." : `${selectedLabel} work.`;
     projectGridSummary.textContent = showingAll
       ? "Choose a service above to narrow the gallery. Each project is labeled residential or commercial."
@@ -154,7 +154,7 @@ const prepareQuoteText = (event) => {
   const details = String(formData.get("details") || "").trim();
 
   if (!name) {
-    formStatus.textContent = "Enter your name to prepare the quote request.";
+    formStatus.textContent = "Enter your name to open the prepared quote text.";
     quoteForm.querySelector('[name="name"]')?.focus();
     return;
   }
@@ -166,7 +166,7 @@ const prepareQuoteText = (event) => {
   }
 
   if (!services.length) {
-    formStatus.textContent = "Choose at least one service before preparing your text.";
+    formStatus.textContent = "Choose at least one service before opening your text.";
     quoteForm.querySelector('[name="service"]')?.focus();
     return;
   }

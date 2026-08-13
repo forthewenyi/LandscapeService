@@ -355,6 +355,15 @@ a {
   line-height: 1.48;
 }
 
+.hero-intro > .hero-proof {
+  max-width: 500px;
+  margin-top: 14px;
+  color: var(--cedar);
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
 .hero-contact {
   display: flex;
   flex-wrap: wrap;
@@ -447,8 +456,10 @@ a {
 }
 
 .service-project-link {
-  display: block;
-  margin-top: 24px;
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap-target);
+  margin-top: 10px;
   color: var(--adobe);
   font-size: 0.7rem;
   font-weight: 700;
@@ -1815,6 +1826,7 @@ a {
     grid-template-columns: auto minmax(0, 1fr);
     gap: 0 0.34em;
     min-width: 0;
+    min-height: var(--tap-target);
     width: fit-content;
     padding: 0;
     color: var(--plaster);
