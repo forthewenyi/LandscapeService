@@ -1,0 +1,169 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - link "Gonzalo Landscape and Tree Care home" [ref=e4] [cursor=pointer]:
+      - /url: "#top"
+      - generic [ref=e5]: Gonzalo Landscape
+      - generic [ref=e6]: and Tree Care
+    - navigation "Primary navigation" [ref=e7]:
+      - link "Services" [ref=e8] [cursor=pointer]:
+        - /url: "#services"
+      - link "Projects" [ref=e9] [cursor=pointer]:
+        - /url: projects.html
+      - link "Our story" [ref=e10] [cursor=pointer]:
+        - /url: story.html
+      - link "Get a quote" [ref=e11] [cursor=pointer]:
+        - /url: "#quote"
+    - generic [ref=e12]:
+      - link "512 792 0697" [ref=e13] [cursor=pointer]:
+        - /url: tel:+15127920697
+      - link "Request a quote" [ref=e14] [cursor=pointer]:
+        - /url: "#quote"
+  - main [ref=e15]:
+    - region [ref=e16]:
+      - generic [ref=e17]:
+        - paragraph [ref=e18]: Serving Austin and surrounding communities
+        - heading "Farm-rooted care. A yard that works." [level=1] [ref=e19]: Farm-rooted care.A yard that works.
+        - generic [ref=e20]:
+          - paragraph [ref=e21]: The Gonzalo family crew handles cleanup, planting, hardscapes, decks, and fences—with clear quotes and a clean finish.
+          - generic [ref=e22]:
+            - link "Start with yard photos" [ref=e23] [cursor=pointer]:
+              - /url: "#quote"
+            - link "Call 512 792 0697" [ref=e24] [cursor=pointer]:
+              - /url: tel:+15127920697
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - img "Illustrative front yard before mowing, edging, and bed cleanup" [ref=e27]
+          - img "Illustrative view of the same front yard after mowing, edging, bed cleanup, and fresh mulch" [ref=e29]
+          - generic [ref=e30]: Before
+          - generic [ref=e31]: After
+          - generic: ‹ ›
+          - slider "Reveal the front-yard before and after comparison" [ref=e32]: "50"
+        - paragraph [ref=e33]: Illustrative transformation · Drag to compare before and after.
+    - region "Landscaping services" [ref=e34]:
+      - link "01 Tree + lawn care Trimming, mowing, edging, weed removal, cleanup, and haul-away. View projects →" [ref=e35] [cursor=pointer]:
+        - /url: projects.html?filter=lawn
+        - text: "01"
+        - heading "Tree + lawn care" [level=2] [ref=e36]
+        - paragraph [ref=e37]: Trimming, mowing, edging, weed removal, cleanup, and haul-away.
+        - generic [ref=e38]: View projects →
+      - link "02 Gardens + planting Planting, mulch, cactus care, sprinklers, and clean bed edging. View projects →" [ref=e39] [cursor=pointer]:
+        - /url: projects.html?filter=gardens
+        - text: "02"
+        - heading "Gardens + planting" [level=2] [ref=e40]
+        - paragraph [ref=e41]: Planting, mulch, cactus care, sprinklers, and clean bed edging.
+        - generic [ref=e42]: View projects →
+      - link "03 Patios + hardscapes Patios, gravel paths, grading, stonework, drainage, and borders. View projects →" [ref=e43] [cursor=pointer]:
+        - /url: projects.html?filter=hardscapes
+        - text: "03"
+        - heading "Patios + hardscapes" [level=2] [ref=e44]
+        - paragraph [ref=e45]: Patios, gravel paths, grading, stonework, drainage, and borders.
+        - generic [ref=e46]: View projects →
+      - link "04 Decks + fences Decks, fences, gates, repairs, staining, and sealing. View projects →" [ref=e47] [cursor=pointer]:
+        - /url: projects.html?filter=fences
+        - text: "04"
+        - heading "Decks + fences" [level=2] [ref=e48]
+        - paragraph [ref=e49]: Decks, fences, gates, repairs, staining, and sealing.
+        - generic [ref=e50]: View projects →
+    - region [ref=e51]:
+      - group [ref=e52]:
+        - generic "Need more detail? See the complete service list." [ref=e53] [cursor=pointer]:
+          - generic [ref=e54]:
+            - text: Need more detail?
+            - generic [ref=e55]: See the complete service list.
+          - generic [ref=e56]: View details +
+    - region [ref=e57]:
+      - generic [ref=e58]:
+        - paragraph [ref=e59]: Real project proof
+        - heading "See the results." [level=2] [ref=e60]
+        - paragraph [ref=e61]: Browse clearly labeled before-and-after work from Austin-area properties.
+        - link "See completed projects" [ref=e62] [cursor=pointer]:
+          - /url: projects.html
+      - generic [ref=e63]:
+        - figure "Before" [ref=e64]:
+          - img "Front garden before cleanup" [ref=e65]
+        - figure "After" [ref=e67]:
+          - img "Front garden after cleanup and fresh mulch" [ref=e68]
+    - region [ref=e70]:
+      - generic [ref=e71]:
+        - paragraph [ref=e72]: Simple from the start
+        - heading "How it works." [level=2] [ref=e73]
+      - list [ref=e74]:
+        - listitem [ref=e75]:
+          - generic [ref=e76]: "01"
+          - generic [ref=e77]:
+            - heading "Show us the yard" [level=3] [ref=e78]
+            - paragraph [ref=e79]: Select what you need and add a few photos.
+        - listitem [ref=e80]:
+          - generic [ref=e81]: "02"
+          - generic [ref=e82]:
+            - heading "Review the quote" [level=3] [ref=e83]
+            - paragraph [ref=e84]: We price the agreed scope, materials, and access.
+        - listitem [ref=e85]:
+          - generic [ref=e86]: "03"
+          - generic [ref=e87]:
+            - heading "Get it done" [level=3] [ref=e88]
+            - paragraph [ref=e89]: We confirm timing, complete the work, and clean up.
+    - region [ref=e90]:
+      - generic [ref=e91]:
+        - paragraph [ref=e92]: Fastest way to reach us
+        - heading "Ready for a quote?" [level=2] [ref=e93]
+        - paragraph [ref=e94]: Select what you need. We’ll prepare a text for you to review and send with yard photos.
+        - link "512 792 0697" [ref=e95] [cursor=pointer]:
+          - /url: tel:+15127920697
+        - paragraph [ref=e96]:
+          - text: Prefer email?
+          - link "gonzalotreeservices@gmail.com" [ref=e97] [cursor=pointer]:
+            - /url: mailto:gonzalotreeservices@gmail.com
+      - generic [ref=e98]:
+        - generic [ref=e99]:
+          - text: Name
+          - textbox "Name" [ref=e100]
+        - generic [ref=e101]:
+          - text: Property ZIP or address
+          - textbox "Property ZIP or address" [ref=e102]
+        - group "Services needed" [ref=e103]:
+          - paragraph [ref=e105]: Select all that apply.
+          - generic [ref=e106]:
+            - generic [ref=e107] [cursor=pointer]:
+              - checkbox "Tree care" [ref=e108]
+              - generic [ref=e109]: Tree care
+            - generic [ref=e110] [cursor=pointer]:
+              - checkbox "Lawn care + cleanup" [ref=e111]
+              - generic [ref=e112]: Lawn care + cleanup
+            - generic [ref=e113] [cursor=pointer]:
+              - checkbox "Gardens + planting" [ref=e114]
+              - generic [ref=e115]: Gardens + planting
+            - generic [ref=e116] [cursor=pointer]:
+              - checkbox "Sprinklers" [ref=e117]
+              - generic [ref=e118]: Sprinklers
+            - generic [ref=e119] [cursor=pointer]:
+              - checkbox "Patios + hardscapes" [ref=e120]
+              - generic [ref=e121]: Patios + hardscapes
+            - generic [ref=e122] [cursor=pointer]:
+              - checkbox "Decks + fences" [ref=e123]
+              - generic [ref=e124]: Decks + fences
+            - generic [ref=e125] [cursor=pointer]:
+              - checkbox "Other / not sure" [ref=e126]
+              - generic [ref=e127]: Other / not sure
+        - generic [ref=e128]:
+          - generic [ref=e129]: Anything else? Optional
+          - textbox "Anything else? Optional" [ref=e130]:
+            - /placeholder: What would you like us to look at?
+        - button "Prepare my text" [ref=e131] [cursor=pointer]
+        - paragraph [ref=e132]: Nothing sends automatically. Review the message, attach 3–5 yard photos, then tap Send.
+        - status [ref=e133]
+  - contentinfo [ref=e134]:
+    - link "Gonzalo Landscape and Tree Care" [ref=e135] [cursor=pointer]:
+      - /url: "#top"
+    - paragraph [ref=e136]: Thirty years of Gonzalo family experience in tree and lawn care, gardens, patios, decks, and fences. Serving Austin and surrounding communities.
+    - generic [ref=e137]:
+      - link "Call 512 792 0697" [ref=e138] [cursor=pointer]:
+        - /url: tel:+15127920697
+      - link "Text for a quote" [ref=e139] [cursor=pointer]:
+        - /url: sms:+15127920697
+      - link "Email us" [ref=e140] [cursor=pointer]:
+        - /url: mailto:gonzalotreeservices@gmail.com
+      - link "Back to top" [ref=e141] [cursor=pointer]:
+        - /url: "#top"

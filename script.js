@@ -102,11 +102,11 @@ const setProjectFilter = (filter) => {
   const selectedLabel = selectedButton?.textContent.trim() || "Projects";
   if (projectGridKicker && projectGridTitle && projectGridSummary) {
     const showingAll = filter === "all";
-    projectGridKicker.textContent = showingAll ? "More completed work" : "Filtered by service";
+    projectGridKicker.textContent = showingAll ? "Project work + available services" : "Filtered by service";
     projectGridTitle.textContent = showingAll ? "Find a project like yours." : `${selectedLabel} work.`;
     projectGridSummary.textContent = showingAll
-      ? "Choose a service above to narrow the gallery."
-      : "Real project photos are shown when available; clearly labeled examples fill the gaps for now.";
+      ? "Choose a service above to narrow the gallery. Each project is labeled residential or commercial."
+      : "Project photos appear where available. Services without photos are clearly labeled.";
   }
 };
 
