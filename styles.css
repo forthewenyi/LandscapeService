@@ -961,8 +961,13 @@ a {
 
 .story-proof-copy h2 {
   margin-bottom: 32px;
-  font-size: clamp(3.8rem, 6vw, 6.5rem);
-  overflow-wrap: anywhere;
+  font-size: clamp(3rem, 14cqw, 6.5rem);
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.story-proof-copy {
+  container-type: inline-size;
 }
 
 .story-values {
@@ -1200,8 +1205,13 @@ a {
   align-self: start;
 }
 
-.project-story-pair figure {
+.project-story-pair {
   aspect-ratio: 4 / 3;
+}
+
+.project-story-pair figure {
+  height: 100%;
+  aspect-ratio: auto;
 }
 
 .project-photo-set {
@@ -2187,7 +2197,7 @@ a {
   }
 
   .story-proof-copy h2 {
-    font-size: clamp(3.4rem, 14vw, 4.8rem);
+    font-size: clamp(2.8rem, 14cqw, 4.8rem);
   }
 
   .story-hero-copy h1 br {
