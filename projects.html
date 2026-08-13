@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="See real Austin-area landscaping projects, including lawn and garden work, patios, paths, decks, fences, and clearly labeled before-and-after results." />
+    <meta name="description" content="See Central Texas tree work, planting, hardscapes, patios, decks, fences, sprinkler installation, and yard cleanup from Gonzalo Landscape and Tree Care." />
     <meta name="theme-color" content="#123b31" />
     <title>Projects | Gonzalo Landscape and Tree Care</title>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23123b31'/%3E%3Cpath d='M18 42C18 25 30 13 48 14C47 32 35 44 18 42Z' fill='%23e6d9c1'/%3E%3Cpath d='M19 43C28 34 35 27 47 16' stroke='%23c4512f' stroke-width='4'/%3E%3C/svg%3E" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260812-5" />
+    <link rel="stylesheet" href="styles.css?v=20260812-11" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -25,7 +25,7 @@
       </nav>
       <div class="header-actions">
         <a class="header-phone" href="tel:+15127920697">512 792 0697</a>
-        <a class="button button-accent" href="index.html#quote">Request a quote</a>
+        <a class="button button-accent" href="index.html#quote">Text photos for a quote</a>
       </div>
     </header>
 
@@ -34,25 +34,29 @@
         <div class="section-heading reveal">
           <p class="kicker">Project gallery</p>
           <h1 class="display-type" id="projects-title">Real yards.<br />Clear results.</h1>
-          <p>Filter by service and find a project similar to yours.</p>
+          <p>Residential and commercial work across Austin, Georgetown, Johnson City, and surrounding Central Texas communities.</p>
         </div>
 
         <div class="project-filters" aria-label="Filter landscaping projects">
           <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
-          <button class="filter-button" type="button" data-filter="lawn" aria-pressed="false">Tree + lawn</button>
-          <button class="filter-button" type="button" data-filter="gardens" aria-pressed="false">Gardens + planting</button>
-          <button class="filter-button" type="button" data-filter="hardscapes" aria-pressed="false">Patios + hardscapes</button>
-          <button class="filter-button" type="button" data-filter="fences" aria-pressed="false">Decks + fences</button>
+          <button class="filter-button" type="button" data-filter="tree-service" aria-pressed="false">Tree Service</button>
+          <button class="filter-button" type="button" data-filter="hardscapes" aria-pressed="false">Hardscapes</button>
+          <button class="filter-button" type="button" data-filter="patios" aria-pressed="false">Patios</button>
+          <button class="filter-button" type="button" data-filter="decks" aria-pressed="false">Decks</button>
+          <button class="filter-button" type="button" data-filter="fences" aria-pressed="false">Fences</button>
+          <button class="filter-button" type="button" data-filter="sprinklers" aria-pressed="false">Sprinkler Installation</button>
+          <button class="filter-button" type="button" data-filter="gardens" aria-pressed="false">Gardens</button>
+          <button class="filter-button" type="button" data-filter="yard-cleanup" aria-pressed="false">Yard Cleanup</button>
         </div>
 
-        <section class="featured-projects" aria-labelledby="featured-projects-title">
+        <section class="featured-projects" aria-labelledby="featured-projects-title" data-featured-projects>
           <div class="featured-projects-heading reveal">
             <p class="kicker">Before + after</p>
             <h2 class="display-type" id="featured-projects-title">See what changed.</h2>
             <p>Three starting points. Three clearly labeled results.</p>
           </div>
 
-          <article class="featured-project featured-project-wide reveal" data-category="hardscapes">
+          <article class="featured-project featured-project-wide reveal" data-category="hardscapes yard-cleanup">
             <div class="compare photo-frame" data-compare style="--compare-position: 50%">
               <img loading="lazy" decoding="async" class="compare-before" src="assets/projects/side-yard-overgrowth-before.jpg" alt="Overgrown side yard before cleanup and path construction" />
               <div class="compare-after"><img loading="lazy" decoding="async" src="assets/projects/side-yard-gravel-path-after.jpg" alt="The same side yard after clearing, grading, edging, and gravel-path installation" /></div>
@@ -62,28 +66,53 @@
           </article>
 
           <div class="featured-project-pair">
-            <article class="featured-project reveal" data-category="gardens"><div class="before-after-images"><figure><img loading="lazy" decoding="async" src="assets/projects/front-garden-overgrown-before.jpg" alt="Overgrown front planting bed before garden cleanup" /><figcaption class="display-type">Before</figcaption></figure><figure><img loading="lazy" decoding="async" src="assets/projects/front-garden-fresh-mulch-after.jpg" alt="Front planting bed after cleanup, pruning, edging, and mulch" /><figcaption class="display-type">After</figcaption></figure></div><div class="featured-project-copy"><p class="project-location">Garden cleanup + mulch</p><h3 class="display-type">Front garden reset</h3><p>Weed removal, selective pruning, bed shaping, edging, and fresh mulch.</p></div></article>
-            <article class="featured-project reveal" data-category="gardens hardscapes lawn"><div class="before-after-images"><figure><img loading="lazy" decoding="async" src="assets/projects/backyard-bare-ground-before.jpg" alt="Bare backyard before the full landscape installation" /><figcaption class="display-type">Before</figcaption></figure><figure><img loading="lazy" decoding="async" src="assets/projects/backyard-landscape-finished-after.jpg" alt="Backyard after lawn, gravel paths, stone borders, mulch, and planting" /><figcaption class="display-type">After</figcaption></figure></div><div class="featured-project-copy"><p class="project-location">Complete landscape installation</p><h3 class="display-type">Bare yard to finished landscape</h3><p>Grading, lawn, paths, stone borders, planting areas, mulch, and cleanup.</p></div></article>
+            <article class="featured-project reveal" data-category="gardens yard-cleanup"><div class="before-after-images"><figure><img loading="lazy" decoding="async" src="assets/projects/front-garden-overgrown-before.jpg" alt="Overgrown front planting bed before garden cleanup" /><figcaption class="display-type">Before</figcaption></figure><figure><img loading="lazy" decoding="async" src="assets/projects/front-garden-fresh-mulch-after.jpg" alt="Front planting bed after cleanup, pruning, edging, and mulch" /><figcaption class="display-type">After</figcaption></figure></div><div class="featured-project-copy"><p class="project-location">Garden cleanup + mulch</p><h3 class="display-type">Front garden reset</h3><p>Weed removal, selective pruning, bed shaping, edging, and fresh mulch.</p></div></article>
+            <article class="featured-project reveal" data-category="gardens hardscapes yard-cleanup"><div class="before-after-images"><figure><img loading="lazy" decoding="async" src="assets/projects/backyard-bare-ground-before.jpg" alt="Bare backyard before the full landscape installation" /><figcaption class="display-type">Before</figcaption></figure><figure><img loading="lazy" decoding="async" src="assets/projects/backyard-landscape-finished-after.jpg" alt="Backyard after paths, stone borders, mulch, planting, and ground-cover installation" /><figcaption class="display-type">After</figcaption></figure></div><div class="featured-project-copy"><p class="project-location">Complete landscape installation</p><h3 class="display-type">Bare yard to finished landscape</h3><p>Grading, paths, stone borders, planting areas, mulch, ground cover, and cleanup.</p></div></article>
           </div>
         </section>
 
-        <div class="project-grid-heading reveal"><p class="kicker">More completed work</p><h2 class="display-type">Find a project like yours.</h2></div>
+        <div class="project-grid-heading reveal" data-project-grid-heading><div><p class="kicker" data-project-grid-kicker>More work + available services</p><h2 class="display-type" data-project-grid-title>Find a project like yours.</h2></div><p data-project-grid-summary>Choose a service above to narrow the gallery. Each project is labeled residential or commercial.</p></div>
         <div class="project-grid" data-project-grid>
-          <article class="project-card reveal" data-category="lawn gardens"><div class="photo-frame project-photo"><img loading="lazy" decoding="async" src="assets/projects/backyard-lawn-and-beds-progress.jpg" alt="New backyard lawn beside shaped planting beds awaiting final planting and mulch" /></div><div class="project-meta"><span class="project-index display-type">01</span><div><h2 class="display-type">Lawn + bed installation</h2><p class="project-location">Installation in progress</p><p>Fresh turf, shaped planting beds, and clean stone transitions before the final bed finish.</p></div></div></article>
-          <article class="project-card reveal" data-category="gardens hardscapes"><div class="photo-frame project-photo"><img loading="lazy" decoding="async" src="assets/projects/front-yard-hardscape-and-beds-progress.jpg" alt="Front-yard installation in progress with a paver landing, stepping stones, river rock, and mulched beds" /></div><div class="project-meta"><span class="project-index display-type">02</span><div><h2 class="display-type">Paver landing + garden path</h2><p class="project-location">Installation in progress</p><p>A paver landing, stepping-stone paths, river-rock drainage, and refreshed planting beds.</p></div></div></article>
-          <article class="project-card reveal" data-category="hardscapes"><div class="photo-frame project-photo"><img loading="lazy" decoding="async" src="assets/projects/backyard-gravel-fire-pit-patio-after.jpg?v=20260812-2" alt="Finished backyard gravel patio with limestone retaining walls and a central fire pit" /></div><div class="project-meta"><span class="project-index display-type">03</span><div><h2 class="display-type">Fire-pit patio</h2><p class="project-location">Backyard hardscape</p><p>A gravel seating area, limestone retaining walls, central fire pit, and finished borders.</p></div></div></article>
-          <article class="project-card project-card-portrait reveal" data-category="fences"><div class="photo-frame project-photo"><img loading="lazy" decoding="async" src="assets/projects/backyard-horizontal-wood-fence-enclosure-after.jpg?v=20260812-2" alt="New horizontal-board utility enclosure and gate built beside a brick home" /></div><div class="project-meta"><span class="project-index display-type">04</span><div><h2 class="display-type">Custom utility enclosure</h2><p class="project-location">Fence + structure</p><p>Horizontal-board construction, a framed gate, secure hardware, and a clean fit beside the home.</p></div></div></article>
+          <article class="project-card project-story-card reveal" data-category="tree-service yard-cleanup">
+            <div class="before-after-images project-story-pair"><figure><img loading="lazy" decoding="async" src="assets/projects/residential-tree-canopy-before.jpg" alt="Large residential front-yard tree before canopy trimming" /><figcaption class="display-type">Before</figcaption></figure><figure><img loading="lazy" decoding="async" src="assets/projects/residential-tree-canopy-after.jpg" alt="Residential front-yard tree after canopy trimming and debris cleanup" /><figcaption class="display-type">After</figcaption></figure></div>
+            <div class="project-meta"><span class="project-index display-type">01</span><div><h2 class="display-type">Tree-canopy trimming</h2><p class="project-location">Central Texas · Residential</p><p>Canopy trimming around the home, followed by branch cleanup and debris haul-away.</p></div></div>
+          </article>
+
+          <article class="project-card project-story-card reveal" data-category="gardens hardscapes yard-cleanup">
+            <div class="photo-frame project-photo"><img loading="lazy" decoding="async" src="assets/projects/residential-front-garden-mulch-after.jpg" alt="Residential front garden after bed shaping, stone edging, and fresh dark mulch" /></div>
+            <div class="project-meta"><span class="project-index display-type">02</span><div><h2 class="display-type">Front garden + drainage refresh</h2><p class="project-location">Central Texas · Residential</p><p>Native planting areas, shaped beds, stone edging, river-rock drainage, pavers, and fresh mulch.</p></div></div>
+            <details class="project-photo-set"><summary>View 4 project photos</summary><div class="project-photo-set-grid"><figure><img loading="lazy" decoding="async" src="assets/projects/residential-front-garden-native-plants-before.jpg" alt="Residential front garden before the bed and drainage refresh" /><figcaption>Before · Existing native plants and beds</figcaption></figure><figure><img loading="lazy" decoding="async" src="assets/projects/residential-front-garden-bed-edging-progress.jpg" alt="Crew member shaping a residential front garden bed" /><figcaption>Progress · Bed shaping and cleanup</figcaption></figure><figure><img loading="lazy" decoding="async" src="assets/projects/residential-front-yard-pavers-river-rock-progress.jpg" alt="Residential front yard during paver, river-rock drainage, and garden-bed installation" /><figcaption>Progress · Pavers and river-rock drainage</figcaption></figure><figure><img loading="lazy" decoding="async" src="assets/projects/residential-front-garden-mulch-after.jpg" alt="Residential front garden completed with stone edging and fresh mulch" /><figcaption>After · Edged beds and fresh mulch</figcaption></figure></div></details>
+          </article>
+
+          <article class="project-card project-story-card reveal" data-category="hardscapes gardens yard-cleanup">
+            <div class="photo-frame project-photo"><img loading="lazy" decoding="async" src="assets/projects/residential-backyard-curved-gravel-path-after.jpg" alt="Completed residential backyard gravel path with stone borders and mulched planting beds" /></div>
+            <div class="project-meta"><span class="project-index display-type">03</span><div><h2 class="display-type">Backyard paths + planting beds</h2><p class="project-location">Central Texas · Residential</p><p>Ground clearing, grading, landscape fabric, compacted paths, stone borders, planting beds, mulch, and cleanup.</p></div></div>
+            <details class="project-photo-set"><summary>View 7 project photos</summary><div class="project-photo-set-grid"><figure><img loading="lazy" decoding="async" src="assets/projects/residential-backyard-path-layout-before.jpg" alt="Residential backyard before grading and gravel-path construction" /><figcaption>Before · Path layout</figcaption></figure><figure><img loading="lazy" decoding="async" src="assets/projects/residential-backyard-grading-progress.jpg" alt="Residential backyard during grading and soil preparation" /><figcaption>Progress · Grading</figcaption></figure><figure><img loading="lazy" decoding="async" src="assets/projects/residential-backyard-landscape-fabric-progress.jpg" alt="Landscape fabric installed for a residential backyard path" /><figcaption>Progress · Landscape fabric</figcaption></figure><figure><img loading="lazy" decoding="async" src="assets/projects/residential-backyard-gravel-path-installation-progress.jpg" alt="Gravel staged across landscape fabric during residential path construction" /><figcaption>Progress · Gravel installation</figcaption></figure><figure><img loading="lazy" decoding="async" src="assets/projects/residential-backyard-path-mulch-progress.jpg" alt="Residential backyard with compacted paths, stone edging, and new mulch in progress" /><figcaption>Progress · Paths and mulch</figcaption></figure><figure><img loading="lazy" decoding="async" src="assets/projects/residential-backyard-curved-gravel-path-after.jpg" alt="Completed curved gravel path and dark planting beds in a residential backyard" /><figcaption>After · Curved gravel path</figcaption></figure><figure><img loading="lazy" decoding="async" src="assets/projects/residential-backyard-groundcover-stone-border-after.jpg" alt="Residential backyard after ground-cover installation and stone border construction" /><figcaption>After · Ground cover and borders</figcaption></figure></div></details>
+          </article>
+
+          <article class="project-card project-story-card project-card-portrait reveal" data-category="hardscapes yard-cleanup">
+            <div class="photo-frame project-photo"><img loading="lazy" decoding="async" src="assets/projects/residential-side-yard-path-river-rock-after.jpg" alt="Completed compacted residential side-yard path bordered with river rock" /></div>
+            <div class="project-meta"><span class="project-index display-type">04</span><div><h2 class="display-type">Side-yard access path</h2><p class="project-location">Central Texas · Residential</p><p>A narrow access route cleared and finished with a compacted walkway, river-rock drainage, stone edging, and mulch.</p></div></div>
+            <details class="project-photo-set"><summary>View 3 project photos</summary><div class="project-photo-set-grid"><figure><img loading="lazy" decoding="async" src="assets/projects/residential-side-yard-path-layout-before.jpg" alt="Residential side yard before compacted-path and river-rock installation" /><figcaption>Before · Cleared path layout</figcaption></figure><figure><img loading="lazy" decoding="async" src="assets/projects/residential-side-yard-compacted-path-after.jpg" alt="Residential side yard after compacted-path construction and mulching" /><figcaption>After · Compacted path and mulch</figcaption></figure><figure><img loading="lazy" decoding="async" src="assets/projects/residential-side-yard-path-river-rock-after.jpg" alt="Completed residential side-yard path with river-rock drainage on both sides" /><figcaption>After · River-rock drainage</figcaption></figure></div></details>
+          </article>
+
+          <article class="project-card reveal" data-category="gardens hardscapes"><div class="photo-frame project-photo"><img loading="lazy" decoding="async" src="assets/projects/backyard-lawn-and-beds-progress.jpg" alt="Backyard with shaped planting beds and clean stone transitions during installation" /></div><div class="project-meta"><span class="project-index display-type">05</span><div><h2 class="display-type">Backyard beds + stone transitions</h2><p class="project-location">Central Texas · Residential · In progress</p><p>Shaped planting beds and clean stone transitions before planting and the final bed finish.</p></div></div></article>
+          <article class="project-card reveal" data-category="gardens hardscapes"><div class="photo-frame project-photo"><img loading="lazy" decoding="async" src="assets/projects/front-yard-hardscape-and-beds-progress.jpg" alt="Front-yard installation in progress with a paver landing, stepping stones, river rock, and mulched beds" /></div><div class="project-meta"><span class="project-index display-type">06</span><div><h2 class="display-type">Paver landing + garden path</h2><p class="project-location">Central Texas · Residential · In progress</p><p>A paver landing, stepping-stone paths, river-rock drainage, and refreshed planting beds.</p></div></div></article>
+          <article class="project-card reveal" data-category="patios hardscapes"><div class="photo-frame project-photo"><img loading="lazy" decoding="async" src="assets/projects/backyard-gravel-fire-pit-patio-after.jpg?v=20260812-2" alt="Finished backyard gravel patio with limestone retaining walls and a central fire pit" /></div><div class="project-meta"><span class="project-index display-type">07</span><div><h2 class="display-type">Fire-pit patio</h2><p class="project-location">Central Texas · Residential</p><p>A gravel seating area, limestone retaining walls, central fire pit, and finished borders.</p></div></div></article>
+          <article class="project-card project-card-portrait reveal" data-category="fences"><div class="photo-frame project-photo"><img loading="lazy" decoding="async" src="assets/projects/backyard-horizontal-wood-fence-enclosure-after.jpg?v=20260812-2" alt="New horizontal-board utility enclosure and gate built beside a brick home" /></div><div class="project-meta"><span class="project-index display-type">08</span><div><h2 class="display-type">Custom utility enclosure</h2><p class="project-location">Central Texas · Residential</p><p>Horizontal-board construction, a framed gate, secure hardware, and a clean fit beside the home.</p></div></div></article>
+          <article class="project-card project-card-placeholder reveal" data-category="decks"><div class="project-placeholder" aria-label="Deck project photos coming soon"><p class="kicker">Project photos coming soon</p><p class="display-type">Build.<br />Repair.<br />Protect.</p><span>Planning a deck? Send photos of the space and tell us what you want to build, repair, stain, or seal.</span></div><div class="project-meta"><div><h2 class="display-type">Decks</h2><p class="project-location">Residential + commercial service</p><p>New construction, repairs, staining, and sealing.</p></div></div></article>
+          <article class="project-card project-card-placeholder reveal" data-category="sprinklers"><div class="project-placeholder" aria-label="Sprinkler installation photos coming soon"><p class="kicker">Project photos coming soon</p><p class="display-type">Plan.<br />Trench.<br />Install.</p><span>Planning a new in-ground sprinkler system? Send photos of the property and the areas that need watering.</span></div><div class="project-meta"><div><h2 class="display-type">Sprinkler Installation</h2><p class="project-location">Residential + commercial service</p><p>New in-ground system installation only—not sprinkler repair.</p></div></div></article>
         </div>
       </section>
 
       <section class="page-cta">
         <p class="kicker">Have a project in mind?</p>
         <h2 class="display-type">Show us what needs work.</h2>
-        <a class="button button-accent" href="index.html#quote">Request a quote</a>
+        <a class="button button-accent" href="index.html#quote">Text photos for a quote</a>
       </section>
     </main>
 
-    <footer class="site-footer"><a class="brand display-type" href="index.html">Gonzalo Landscape and Tree Care</a><p>Thirty years of Gonzalo family experience serving Austin and surrounding communities.</p><div class="footer-links"><a href="tel:+15127920697">Call 512 792 0697</a><a href="sms:+15127920697">Text for a quote</a><a href="mailto:gonzalotreeservices@gmail.com">Email us</a><a href="index.html">Home</a></div></footer>
-    <script src="script.js?v=20260812-4"></script>
+    <footer class="site-footer"><a class="brand display-type" href="index.html">Gonzalo Landscape and Tree Care</a><p>Farm-rooted property care backed by 30 years of Gonzalo family experience. Serving Austin and surrounding Central Texas communities.</p><div class="footer-links"><a href="tel:+15127920697">Call 512 792 0697</a><a href="sms:+15127920697">Text for a quote</a><a href="mailto:gonzalotreeservices@gmail.com">gonzalotreeservices@gmail.com</a><a href="index.html">Home</a></div></footer>
+    <script src="script.js?v=20260812-6"></script>
   </body>
 </html>

@@ -49,6 +49,44 @@ can be used directly in website markup and content management tools.
 | `backyard-gravel-fire-pit-patio-after.jpg` | After | Gravel fire-pit seating area and retaining-wall gallery |
 | `backyard-horizontal-wood-fence-enclosure-after.jpg` | After | Utility enclosure and gate gallery |
 
+## Residential project set added August 2026
+
+The source exports did not contain reliable city metadata. These photos are
+published as `Central Texas · Residential`; replace that label with the exact
+city only after the job location is confirmed.
+
+### Tree-canopy trimming
+
+- `residential-tree-canopy-before.jpg`
+- `residential-tree-canopy-after.jpg`
+
+Five additional tree-job exports were not published because a street number is
+readable in the image. Keep private property identifiers out of the public
+gallery unless the image is safely redacted or the customer approves it.
+
+### Front garden and drainage refresh
+
+- `residential-front-garden-native-plants-before.jpg`
+- `residential-front-garden-bed-edging-progress.jpg`
+- `residential-front-yard-pavers-river-rock-progress.jpg`
+- `residential-front-garden-mulch-after.jpg`
+
+### Backyard paths and planting beds
+
+- `residential-backyard-path-layout-before.jpg`
+- `residential-backyard-grading-progress.jpg`
+- `residential-backyard-landscape-fabric-progress.jpg`
+- `residential-backyard-gravel-path-installation-progress.jpg`
+- `residential-backyard-path-mulch-progress.jpg`
+- `residential-backyard-curved-gravel-path-after.jpg`
+- `residential-backyard-groundcover-stone-border-after.jpg`
+
+### Side-yard access path
+
+- `residential-side-yard-path-layout-before.jpg`
+- `residential-side-yard-compacted-path-after.jpg`
+- `residential-side-yard-path-river-rock-after.jpg`
+
 ## Orientation notes
 
 - Browser orientation is baked into every exported file; none relies on EXIF rotation.
