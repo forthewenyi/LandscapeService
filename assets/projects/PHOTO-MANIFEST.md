@@ -60,6 +60,15 @@ city only after the job location is confirmed.
 - `residential-tree-canopy-before.jpg`
 - `residential-tree-canopy-after.jpg`
 
+### Hazardous limb removal
+
+- `residential-hazardous-limb-removal-before.jpg`
+- `residential-hazardous-limb-removal-progress.jpg`
+
+The first photo shows the canopy before the safety work. The second shows the
+tree during cleanup, with rigging ropes visible and removed branches loaded for
+haul-off. It is labeled as cleanup rather than a finished after photo.
+
 Five additional tree-job exports were not published because a street number is
 readable in the image. Keep private property identifiers out of the public
 gallery unless the image is safely redacted or the customer approves it.
